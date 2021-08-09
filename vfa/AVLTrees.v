@@ -81,4 +81,15 @@ Definition balance {V : Type} (d : V) (t : tree V) : tree V :=
                      else t
   end.
 
+(** * Agora, definiremos a funcao de insert, que utilizara a funcao de balance sempre
+      que uma insercao e realizada. *)
+
+Fixpoint insert' {V : Type} (x : key) (v : V) (d : V) (t : tree V) : tree V :=
+  match t with
+  | E => T E x v E
+  | T l y v' r => if x <? y then balance d (T (insert' x v d l) y v' r)
+                 else if x >? y then balance d (T l y v' (insert' x v d r))
+                      else T l x v r
+  end.
+
 (* 2021-08-08 *)
