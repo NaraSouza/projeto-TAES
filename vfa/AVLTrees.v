@@ -18,6 +18,8 @@
 
 From VFA Require Import SearchTree.
 Require Import Coq.Init.Nat.
+Require Import Coq.ZArith.Int.
+Require Import Coq.ZArith.BinIntDef.
 From VFA Require Import Perm.
 
 
@@ -31,7 +33,11 @@ From VFA Require Import Perm.
     funcao que calcula a altura de uma arvore. Tambem iremos definir as funcoes
     rotateLeft e rotateRight, alem de outras funcoes auxiliares.*)
 
-Fixpoint height {V : Type} (t : tree V) : nat :=
+Module AVL (Import I:Int).
+
+Local Notation int := I.t.
+
+Fixpoint height {V : Type} (t : tree V) : int :=
   match t with
   | E => 0
   | T l x v r => 1 + (max (height l) (height r))
@@ -73,13 +79,18 @@ Definition rotateRight {V : Type} (d : V) (t : tree V) : tree V :=
   | T l x v r => T (leftTree l) (rootKey l) (rootValue d l) (T E x v E)
   end.
 
+
+Local Open Scope Int_scope.
+
 Definition balance {V : Type} (d : V) (t : tree V) : tree V :=
   match t with
   | E => t
-  | T l x v r => if (height l - height r) >? 1 then rotateLeft d t
-                else if (height r - height l) >? 1 then rotateRight d t
+  | T l x v r => if I.ltb 1 (I.sub (height r) (height l)) then rotateLeft d t
+                else if (height r - height l) <? -(1) then rotateRight d t
                      else t
   end.
+
+Close Scope Int_scope.
 
 (** * Agora, definiremos a funcao de insert, que utilizara a funcao de balance sempre
       que uma insercao e realizada. *)
@@ -87,7 +98,7 @@ Definition balance {V : Type} (d : V) (t : tree V) : tree V :=
 Fixpoint insert' {V : Type} (x : key) (v : V) (d : V) (t : tree V) : tree V :=
   match t with
   | E => T E x v E
-  | T l y v' r => if x <? y then balance d (T (insert' x v d l) y v' r)
+  | T l y v' r => if y >? x then balance d (T (insert' x v d l) y v' r)
                  else if x >? y then balance d (T l y v' (insert' x v d r))
                       else T l x v r
   end.
