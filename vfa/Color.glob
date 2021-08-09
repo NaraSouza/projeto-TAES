@@ -1,0 +1,924 @@
+DIGEST 3aeea12e99071b653c7e0220e14ed40a
+FVFA.Color
+R3187:3190 Coq.Lists.List <> <> lib
+R3208:3213 Coq.Setoids.Setoid <> <> lib
+R3260:3264 Coq.FSets.FSets <> <> lib
+R3316:3320 Coq.FSets.FMaps <> <> lib
+R3372:3377 Coq.PArith.PArith <> <> lib
+R3421:3424 VFA.Perm <> <> lib
+R3919:3941 Coq.Structures.OrderedTypeEx PositiveOrderedTypeBits <> modtype
+mod 3914:3914 <> E
+R3966:3968 VFA.Color <> t def
+R4169:4183 Coq.FSets.FSetInterface S <> mod
+R4188:4198 Coq.FSets.FSetPositive PositiveSet <> modtype
+mod 4164:4164 <> S
+R4223:4227 VFA.Color <> elt def
+R4300:4314 Coq.FSets.FMapInterface S <> mod
+R4319:4329 Coq.FSets.FMapPositive PositiveMap <> modtype
+mod 4295:4295 <> M
+R4899:4908 Coq.FSets.FMapFacts WFacts_fun <> modtype
+R4910:4910 VFA.Color E <> modtype
+R4912:4912 VFA.Color M <> modtype
+mod 4893:4894 <> WF
+R4971:4985 Coq.FSets.FMapFacts WProperties_fun <> modtype
+R4987:4987 VFA.Color E <> modtype
+R4989:4989 VFA.Color M <> modtype
+mod 4965:4966 <> WP
+R5069:5072 VFA.Color <> lt def
+prf 5684:5692 <> lt_strict
+R5695:5705 Coq.Classes.RelationClasses <> StrictOrder class
+R5707:5710 VFA.Color <> lt def
+R5726:5749 VFA.Color <> lt_strorder def
+R5726:5749 VFA.Color <> lt_strorder def
+prf 5764:5772 <> lt_proper
+R5775:5780 Coq.Classes.Morphisms <> Proper class
+R5802:5805 VFA.Color <> lt def
+R5785:5789 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R5783:5784 Coq.Init.Logic <> eq ind
+R5792:5796 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R5790:5791 Coq.Init.Logic <> eq ind
+R5797:5799 Coq.Init.Logic <> iff def
+R5821:5842 VFA.Color <> lt_compat def
+R5821:5842 VFA.Color <> lt_compat def
+def 6451:6457 <> Mdomain
+binder 6460:6460 <> A:1
+R6467:6469 VFA.Color <> t def
+R6471:6471 VFA.Color <> A:1 var
+binder 6464:6464 <> m:2
+R6476:6478 VFA.Color <> t def
+R6487:6492 VFA.Color <> fold def
+R6521:6527 VFA.Color <> empty def
+R6519:6519 VFA.Color <> m:2 var
+binder 6499:6499 <> n:3
+binder 6503:6503 <> s:4
+R6508:6512 VFA.Color <> add def
+R6516:6516 VFA.Color <> s:4 var
+R6514:6514 VFA.Color <> n:3 var
+def 6752:6762 <> example_map
+R6766:6768 VFA.Color <> t def
+R6770:6772 VFA.Color <> t def
+R6778:6782 VFA.Color <> add def
+R6807:6811 VFA.Color <> add def
+R6837:6841 VFA.Color <> add def
+R6863:6869 VFA.Color <> empty def
+R6871:6873 VFA.Color <> t def
+R6854:6860 VFA.Color <> empty def
+R6824:6830 VFA.Color <> empty def
+R6795:6801 VFA.Color <> empty def
+def 6892:6909 <> domain_example_map
+R6949:6951 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6917:6926 VFA.Color <> elements def
+R6929:6935 VFA.Color <> Mdomain def
+R6937:6947 VFA.Color <> example_map def
+R6952:6952 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6954:6954 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6956:6956 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R6958:6958 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R7105:7114 Coq.Lists.SetoidList <> equivlistA def
+def 7958:7968 <> same_mod_10
+R7976:7978 Coq.Init.Datatypes <> nat ind
+binder 7971:7971 <> i:5
+binder 7973:7973 <> j:6
+R7992:7994 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7985:7989 Coq.Arith.PeanoNat <> ::nat_scope:x_'mod'_x not
+R7984:7984 VFA.Color <> i:5 var
+R7996:8000 Coq.Arith.PeanoNat <> ::nat_scope:x_'mod'_x not
+R7995:7995 VFA.Color <> j:6 var
+def 8013:8023 <> InA_example
+R8027:8029 Coq.Lists.SetoidList <> InA ind
+R8046:8046 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8048:8048 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8051:8051 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8053:8053 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8031:8041 VFA.Color <> same_mod_10 def
+def 8278:8295 <> equivlistA_example
+R8298:8307 Coq.Lists.SetoidList <> equivlistA def
+R8329:8329 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8331:8332 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8334:8335 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8338:8338 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8321:8321 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8323:8324 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8327:8327 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R8309:8319 VFA.Color <> same_mod_10 def
+R9471:9494 Coq.Lists.SetoidList <> SortA_equivlistA_eqlistA thm
+def 10611:10629 <> Unnamed_thm
+R10619:10621 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10616:10618 VFA.Color <> t def
+R10622:10629 Coq.Numbers.BinNums <> positive ind
+def 10658:10681 <> Unnamed_thm0
+R10667:10669 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10663:10666 VFA.Color <> eq def
+R10671:10672 Coq.Init.Logic <> eq ind
+R10674:10681 Coq.Numbers.BinNums <> positive ind
+prf 10788:10801 <> eqlistA_Eeq_eq
+binder 10811:10812 <> al:7
+binder 10814:10815 <> bl:8
+R10836:10840 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10818:10824 Coq.Lists.SetoidList <> eqlistA ind
+R10834:10835 VFA.Color <> bl:8 var
+R10831:10832 VFA.Color <> al:7 var
+R10826:10829 VFA.Color <> eq def
+R10843:10843 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10841:10842 VFA.Color <> al:7 var
+R10844:10845 VFA.Color <> bl:8 var
+R10904:10907 VFA.Color <> eq def
+R10994:10997 VFA.Color <> eq def
+prf 11153:11176 <> SortE_equivlistE_eqlistE
+binder 11187:11188 <> al:9
+binder 11190:11191 <> bl:10
+R11208:11230 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11194:11199 Coq.Sorting.Sorted <> Sorted ind
+R11206:11207 VFA.Color <> al:9 var
+R11201:11204 VFA.Color <> lt def
+R11245:11267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11231:11236 Coq.Sorting.Sorted <> Sorted ind
+R11243:11244 VFA.Color <> bl:10 var
+R11238:11241 VFA.Color <> lt def
+R11289:11292 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11268:11277 Coq.Lists.SetoidList <> equivlistA def
+R11287:11288 VFA.Color <> bl:10 var
+R11284:11285 VFA.Color <> al:9 var
+R11279:11282 VFA.Color <> eq def
+R11293:11299 Coq.Lists.SetoidList <> eqlistA ind
+R11309:11310 VFA.Color <> bl:10 var
+R11306:11307 VFA.Color <> al:9 var
+R11301:11304 VFA.Color <> eq def
+R11328:11351 Coq.Lists.SetoidList <> SortA_equivlistA_eqlistA thm
+R11328:11351 Coq.Lists.SetoidList <> SortA_equivlistA_eqlistA thm
+R11368:11376 VFA.Color <> lt_strict thm
+R11368:11376 VFA.Color <> lt_strict thm
+R11387:11395 VFA.Color <> lt_proper thm
+R11387:11395 VFA.Color <> lt_proper thm
+prf 11568:11579 <> filter_sortE
+binder 11589:11589 <> f:11
+binder 11591:11591 <> l:12
+R11613:11616 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11600:11605 Coq.Sorting.Sorted <> Sorted ind
+R11612:11612 VFA.Color <> l:12 var
+R11607:11610 VFA.Color <> lt def
+R11617:11622 Coq.Sorting.Sorted <> Sorted ind
+R11630:11640 Coq.Lists.List <> filter def
+R11644:11644 VFA.Color <> l:12 var
+R11642:11642 VFA.Color <> f:11 var
+R11624:11627 VFA.Color <> lt def
+R11680:11683 VFA.Color <> eq def
+R11663:11673 Coq.Lists.SetoidList <> filter_sort thm
+R11680:11683 VFA.Color <> eq def
+R11663:11673 Coq.Lists.SetoidList <> filter_sort thm
+R11700:11708 VFA.Color <> lt_strict thm
+R11700:11708 VFA.Color <> lt_strict thm
+R11719:11727 VFA.Color <> lt_proper thm
+R11719:11727 VFA.Color <> lt_proper thm
+R11937:11944 VFA.Color <> remove def
+R11982:11991 VFA.Color <> elements def
+prf 12203:12218 <> Sremove_elements
+R12233:12235 VFA.Color <> t def
+binder 12230:12230 <> i:13
+R12242:12244 VFA.Color <> t def
+binder 12239:12239 <> s:14
+R12259:12268 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12251:12254 VFA.Color <> In def
+R12258:12258 VFA.Color <> s:14 var
+R12256:12256 VFA.Color <> i:13 var
+R12294:12306 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12269:12278 VFA.Color <> elements def
+R12281:12288 VFA.Color <> remove def
+R12292:12292 VFA.Color <> s:14 var
+R12290:12290 VFA.Color <> i:13 var
+R12307:12317 Coq.Lists.List <> filter def
+R12368:12377 VFA.Color <> elements def
+R12379:12379 VFA.Color <> s:14 var
+binder 12324:12324 <> x:15
+R12332:12339 VFA.Color <> eq_dec thm
+R12341:12341 VFA.Color <> x:15 var
+R12343:12343 VFA.Color <> i:13 var
+R12361:12364 Coq.Init.Datatypes <> true constr
+R12350:12354 Coq.Init.Datatypes <> false constr
+prf 12695:12706 <> Proper_eq_eq
+binder 12718:12718 <> f:16
+R12721:12726 Coq.Classes.Morphisms <> Proper class
+R12748:12748 VFA.Color <> f:16 var
+R12733:12737 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R12729:12732 VFA.Color <> eq def
+R12739:12740 Coq.Init.Logic <> eq ind
+R12742:12745 Coq.Init.Datatypes <> bool ind
+R12765:12770 Coq.Classes.Morphisms <> Proper class
+R12780:12789 Coq.Classes.Morphisms <> respectful def
+prf 12828:12843 <> Sremove_elements
+R12858:12860 VFA.Color <> t def
+binder 12855:12855 <> i:17
+R12867:12869 VFA.Color <> t def
+binder 12864:12864 <> s:18
+R12884:12893 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R12876:12879 VFA.Color <> In def
+R12883:12883 VFA.Color <> s:18 var
+R12881:12881 VFA.Color <> i:17 var
+R12919:12931 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12894:12903 VFA.Color <> elements def
+R12906:12913 VFA.Color <> remove def
+R12917:12917 VFA.Color <> s:18 var
+R12915:12915 VFA.Color <> i:17 var
+R12932:12942 Coq.Lists.List <> filter def
+R12993:13002 VFA.Color <> elements def
+R13004:13004 VFA.Color <> s:18 var
+binder 12949:12949 <> x:19
+R12957:12964 VFA.Color <> eq_dec thm
+R12966:12966 VFA.Color <> x:19 var
+R12968:12968 VFA.Color <> i:17 var
+R12986:12989 Coq.Init.Datatypes <> true constr
+R12975:12979 Coq.Init.Datatypes <> false constr
+R13029:13042 VFA.Color <> eqlistA_Eeq_eq thm
+R13029:13042 VFA.Color <> eqlistA_Eeq_eq thm
+R13051:13074 VFA.Color <> SortE_equivlistE_eqlistE thm
+R13051:13074 VFA.Color <> SortE_equivlistE_eqlistE thm
+R13245:13254 Coq.Lists.SetoidList <> filter_InA thm
+R13267:13278 VFA.Color <> Proper_eq_eq prfax
+R13245:13254 Coq.Lists.SetoidList <> filter_InA thm
+R13245:13254 Coq.Lists.SetoidList <> filter_InA thm
+R13245:13254 Coq.Lists.SetoidList <> filter_InA thm
+R13267:13278 VFA.Color <> Proper_eq_eq prfax
+R13292:13299 VFA.Color <> eq_dec thm
+R13292:13299 VFA.Color <> eq_dec thm
+R13794:13803 VFA.Color <> elements def
+prf 14108:14122 <> InA_map_fst_key
+binder 14133:14133 <> A:20
+binder 14135:14135 <> j:21
+binder 14137:14137 <> l:22
+R14175:14179 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14142:14144 Coq.Lists.SetoidList <> InA ind
+R14154:14156 Coq.Lists.List <> map def
+R14173:14173 VFA.Color <> l:22 var
+R14160:14162 Coq.Init.Datatypes <> fst def
+R14164:14168 VFA.Color <> t def
+R14170:14170 VFA.Color <> A:20 var
+R14151:14151 VFA.Color <> j:21 var
+R14146:14149 VFA.Color <> eq def
+R14180:14186 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R14188:14189 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 14187:14187 <> e:23
+R14190:14192 Coq.Lists.SetoidList <> InA ind
+R14218:14218 VFA.Color <> l:22 var
+R14212:14212 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14214:14214 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14216:14216 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R14213:14213 VFA.Color <> j:21 var
+R14215:14215 VFA.Color <> e:23 var
+R14196:14207 VFA.Color <> eq_key_elt def
+R14209:14209 VFA.Color <> A:20 var
+prf 14644:14656 <> Sorted_lt_key
+binder 14668:14668 <> A:24
+R14675:14678 Coq.Init.Datatypes <> list ind
+R14689:14689 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R14681:14688 Coq.Numbers.BinNums <> positive ind
+R14690:14690 VFA.Color <> A:24 var
+binder 14671:14672 <> al:25
+R14722:14727 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R14699:14704 Coq.Sorting.Sorted <> Sorted ind
+R14720:14721 VFA.Color <> al:25 var
+R14708:14715 VFA.Color <> lt_key def
+R14717:14717 VFA.Color <> A:24 var
+R14728:14733 Coq.Sorting.Sorted <> Sorted ind
+R14741:14743 Coq.Lists.List <> map def
+R14763:14764 VFA.Color <> al:25 var
+R14747:14749 Coq.Init.Datatypes <> fst def
+R14751:14758 Coq.Numbers.BinNums <> positive ind
+R14760:14760 VFA.Color <> A:24 var
+R14735:14738 VFA.Color <> lt def
+prf 15132:15143 <> cardinal_map
+binder 15154:15154 <> A:26
+binder 15156:15156 <> B:27
+R15163:15166 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15162:15162 VFA.Color <> A:26 var
+R15167:15167 VFA.Color <> B:27 var
+binder 15159:15159 <> f:28
+binder 15170:15170 <> g:29
+R15201:15203 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15179:15188 VFA.Color <> cardinal def
+R15191:15195 VFA.Color <> map def
+R15199:15199 VFA.Color <> g:29 var
+R15197:15197 VFA.Color <> f:28 var
+R15204:15213 VFA.Color <> cardinal def
+R15215:15215 VFA.Color <> g:29 var
+R15323:15334 VFA.Color <> cardinal_1 thm
+R15343:15354 VFA.Color <> elements_1 thm
+R15363:15374 VFA.Color <> elements_2 thm
+R15383:15394 VFA.Color <> elements_3 thm
+R15403:15412 Coq.Lists.List <> map_length thm
+R15421:15434 Coq.Lists.SetoidList <> eqlistA_length thm
+R15443:15466 VFA.Color <> SortE_equivlistE_eqlistE thm
+R15475:15489 VFA.Color <> InA_map_fst_key prfax
+R15498:15514 VFA.Color <> map_mapsto_iff thm
+R15523:15535 VFA.Color <> Sorted_lt_key prfax
+prf 15649:15669 <> Sremove_cardinal_less
+binder 15679:15679 <> i:30
+binder 15681:15681 <> s:31
+R15700:15706 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R15692:15695 VFA.Color <> In def
+R15699:15699 VFA.Color <> s:31 var
+R15697:15697 VFA.Color <> i:30 var
+R15732:15734 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R15707:15716 VFA.Color <> cardinal def
+R15719:15726 VFA.Color <> remove def
+R15730:15730 VFA.Color <> s:31 var
+R15728:15728 VFA.Color <> i:30 var
+R15735:15744 VFA.Color <> cardinal def
+R15746:15746 VFA.Color <> s:31 var
+R15779:15790 VFA.Color <> cardinal_1 thm
+R15779:15790 VFA.Color <> cardinal_1 thm
+R15779:15790 VFA.Color <> cardinal_1 thm
+R15779:15790 VFA.Color <> cardinal_1 thm
+R15779:15790 VFA.Color <> cardinal_1 thm
+R15779:15790 VFA.Color <> cardinal_1 thm
+R15805:15820 VFA.Color <> Sremove_elements prfax
+R15805:15820 VFA.Color <> Sremove_elements prfax
+prf 16181:16215 <> specialize_SortA_equivlistA_eqlistA
+binder 16227:16227 <> A:32
+binder 16229:16230 <> al:33
+binder 16232:16233 <> bl:34
+R16262:16267 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16239:16244 Coq.Sorting.Sorted <> Sorted ind
+R16260:16261 VFA.Color <> al:33 var
+R16248:16255 VFA.Color <> lt_key def
+R16257:16257 VFA.Color <> A:32 var
+R16291:16296 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16268:16273 Coq.Sorting.Sorted <> Sorted ind
+R16289:16290 VFA.Color <> bl:34 var
+R16277:16284 VFA.Color <> lt_key def
+R16286:16286 VFA.Color <> A:32 var
+R16331:16336 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16297:16306 Coq.Lists.SetoidList <> equivlistA def
+R16329:16330 VFA.Color <> bl:34 var
+R16326:16327 VFA.Color <> al:33 var
+R16310:16321 VFA.Color <> eq_key_elt def
+R16323:16323 VFA.Color <> A:32 var
+R16337:16343 Coq.Lists.SetoidList <> eqlistA ind
+R16366:16367 VFA.Color <> bl:34 var
+R16363:16364 VFA.Color <> al:33 var
+R16347:16358 VFA.Color <> eq_key_elt def
+R16360:16360 VFA.Color <> A:32 var
+R16423:16430 VFA.Color <> lt_key def
+R16391:16414 Coq.Lists.SetoidList <> SortA_equivlistA_eqlistA thm
+R16423:16430 VFA.Color <> lt_key def
+R16391:16414 Coq.Lists.SetoidList <> SortA_equivlistA_eqlistA thm
+R16448:16459 VFA.Color <> eqke_equiv inst
+R16448:16459 VFA.Color <> eqke_equiv inst
+R16468:16481 VFA.Color <> ltk_strorder inst
+R16468:16481 VFA.Color <> ltk_strorder inst
+R16512:16519 VFA.Color <> lt_key def
+R16522:16533 VFA.Color <> eq_key_elt def
+prf 16596:16612 <> Proper_eq_key_elt
+binder 16624:16624 <> A:35
+R16631:16636 Coq.Classes.Morphisms <> Proper class
+R16714:16716 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R16711:16713 VFA.Color <> t def
+R16717:16717 VFA.Color <> A:35 var
+binder 16705:16705 <> x:36
+binder 16707:16707 <> y:37
+R16722:16725 VFA.Color <> lt def
+R16728:16730 Coq.Init.Datatypes <> fst def
+R16732:16732 VFA.Color <> x:36 var
+R16736:16738 Coq.Init.Datatypes <> fst def
+R16740:16740 VFA.Color <> y:37 var
+R16654:16658 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R16640:16651 VFA.Color <> eq_key_elt def
+R16653:16653 VFA.Color <> A:35 var
+R16674:16678 Coq.Classes.Morphisms ProperNotations ::signature_scope:x_'==>'_x not
+R16660:16671 VFA.Color <> eq_key_elt def
+R16673:16673 VFA.Color <> A:35 var
+R16679:16681 Coq.Init.Logic <> iff def
+prf 16880:16895 <> Mremove_elements
+binder 16906:16906 <> A:38
+binder 16908:16908 <> i:39
+binder 16910:16910 <> s:40
+R16924:16933 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R16916:16919 VFA.Color <> In def
+R16923:16923 VFA.Color <> s:40 var
+R16921:16921 VFA.Color <> i:39 var
+R16934:16940 Coq.Lists.SetoidList <> eqlistA ind
+R17004:17014 Coq.Lists.List <> filter def
+R17071:17080 VFA.Color <> elements def
+R17082:17082 VFA.Color <> s:40 var
+binder 17021:17021 <> x:41
+R17029:17036 VFA.Color <> eq_dec thm
+R17039:17041 Coq.Init.Datatypes <> fst def
+R17043:17043 VFA.Color <> x:41 var
+R17046:17046 VFA.Color <> i:39 var
+R17064:17067 Coq.Init.Datatypes <> true constr
+R17053:17057 Coq.Init.Datatypes <> false constr
+R16961:16970 VFA.Color <> elements def
+R16973:16980 VFA.Color <> remove def
+R16984:16984 VFA.Color <> s:40 var
+R16982:16982 VFA.Color <> i:39 var
+R16944:16955 VFA.Color <> eq_key_elt def
+R16957:16957 VFA.Color <> A:38 var
+R17107:17141 VFA.Color <> specialize_SortA_equivlistA_eqlistA thm
+R17150:17161 VFA.Color <> elements_1 thm
+R17170:17181 VFA.Color <> elements_2 thm
+R17190:17201 VFA.Color <> elements_3 thm
+R17210:17219 VFA.Color <> remove_1 thm
+R17228:17239 VFA.Color <> eqke_equiv inst
+R17248:17261 VFA.Color <> ltk_strorder inst
+R17270:17286 VFA.Color <> Proper_eq_key_elt thm
+R17295:17304 Coq.Lists.SetoidList <> filter_InA thm
+prf 17418:17438 <> Mremove_cardinal_less
+binder 17448:17448 <> A:42
+binder 17450:17450 <> i:43
+R17456:17458 VFA.Color <> t def
+R17460:17460 VFA.Color <> A:42 var
+binder 17453:17453 <> s:44
+R17472:17484 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17464:17467 VFA.Color <> In def
+R17471:17471 VFA.Color <> s:44 var
+R17469:17469 VFA.Color <> i:43 var
+R17510:17512 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R17485:17494 VFA.Color <> cardinal def
+R17497:17504 VFA.Color <> remove def
+R17508:17508 VFA.Color <> s:44 var
+R17506:17506 VFA.Color <> i:43 var
+R17513:17522 VFA.Color <> cardinal def
+R17524:17524 VFA.Color <> s:44 var
+prf 17755:17773 <> fold_right_rev_left
+binder 17786:17786 <> A:45
+binder 17788:17788 <> B:46
+R17802:17805 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17801:17801 VFA.Color <> A:45 var
+R17807:17810 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R17806:17806 VFA.Color <> B:46 var
+R17811:17811 VFA.Color <> A:45 var
+binder 17798:17798 <> f:47
+R17818:17821 Coq.Init.Datatypes <> list ind
+R17823:17823 VFA.Color <> B:46 var
+binder 17815:17815 <> l:48
+R17830:17830 VFA.Color <> A:45 var
+binder 17827:17827 <> i:49
+R17851:17853 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17836:17844 Coq.Lists.List <> fold_left def
+R17850:17850 VFA.Color <> i:49 var
+R17848:17848 VFA.Color <> l:48 var
+R17846:17846 VFA.Color <> f:47 var
+R17854:17863 Coq.Lists.List <> fold_right def
+R17887:17889 Coq.Lists.List <> rev def
+R17891:17891 VFA.Color <> l:48 var
+R17884:17884 VFA.Color <> i:49 var
+binder 17870:17870 <> x:50
+binder 17872:17872 <> y:51
+R17877:17877 VFA.Color <> f:47 var
+R17881:17881 VFA.Color <> x:50 var
+R17879:17879 VFA.Color <> y:51 var
+prf 17931:17943 <> Snot_in_empty
+binder 17953:17953 <> n:52
+R17956:17957 Coq.Init.Logic <> ::type_scope:'~'_x not
+R17958:17961 VFA.Color <> In def
+R17965:17971 VFA.Color <> empty def
+R17963:17963 VFA.Color <> n:52 var
+prf 18073:18082 <> Sin_domain
+binder 18092:18092 <> A:53
+binder 18094:18094 <> n:54
+R18100:18102 VFA.Color <> t def
+R18104:18104 VFA.Color <> A:53 var
+binder 18097:18097 <> g:55
+R18126:18130 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R18108:18111 VFA.Color <> In def
+R18116:18122 VFA.Color <> Mdomain def
+R18124:18124 VFA.Color <> g:55 var
+R18113:18113 VFA.Color <> n:54 var
+R18131:18134 VFA.Color <> In def
+R18138:18138 VFA.Color <> g:55 var
+R18136:18136 VFA.Color <> n:54 var
+def 18427:18430 <> node
+R18435:18437 VFA.Color <> t def
+def 18451:18457 <> nodeset
+R18462:18464 VFA.Color <> t def
+def 18478:18484 <> nodemap
+R18491:18494 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18503:18505 VFA.Color <> t def
+def 18519:18523 <> graph
+R18528:18534 VFA.Color <> nodemap def
+R18536:18542 VFA.Color <> nodeset def
+def 18557:18559 <> adj
+R18565:18569 VFA.Color <> graph def
+binder 18562:18562 <> g:56
+R18576:18579 VFA.Color <> node def
+binder 18573:18573 <> i:57
+R18584:18590 VFA.Color <> nodeset def
+R18603:18608 VFA.Color <> find def
+R18612:18612 VFA.Color <> g:56 var
+R18610:18610 VFA.Color <> i:57 var
+R18619:18622 Coq.Init.Datatypes <> Some constr
+R18633:18636 Coq.Init.Datatypes <> None constr
+R18641:18647 VFA.Color <> empty def
+def 18666:18675 <> undirected
+R18681:18685 VFA.Color <> graph def
+binder 18678:18678 <> g:58
+binder 18702:18702 <> i:59
+binder 18704:18704 <> j:60
+R18723:18726 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18707:18710 VFA.Color <> In def
+R18715:18717 VFA.Color <> adj def
+R18719:18719 VFA.Color <> g:58 var
+R18721:18721 VFA.Color <> i:59 var
+R18712:18712 VFA.Color <> j:60 var
+R18727:18730 VFA.Color <> In def
+R18735:18737 VFA.Color <> adj def
+R18739:18739 VFA.Color <> g:58 var
+R18741:18741 VFA.Color <> j:60 var
+R18732:18732 VFA.Color <> i:59 var
+def 18757:18767 <> no_selfloop
+R18773:18777 VFA.Color <> graph def
+binder 18770:18770 <> g:61
+binder 18790:18790 <> i:62
+R18793:18794 Coq.Init.Logic <> ::type_scope:'~'_x not
+R18795:18798 VFA.Color <> In def
+R18803:18805 VFA.Color <> adj def
+R18807:18807 VFA.Color <> g:61 var
+R18809:18809 VFA.Color <> i:62 var
+R18800:18800 VFA.Color <> i:62 var
+def 18825:18829 <> nodes
+R18835:18839 VFA.Color <> graph def
+binder 18832:18832 <> g:63
+R18845:18851 VFA.Color <> Mdomain def
+R18853:18853 VFA.Color <> g:63 var
+def 18868:18879 <> subset_nodes
+R18910:18913 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18906:18909 VFA.Color <> node def
+R18921:18924 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R18914:18920 VFA.Color <> nodeset def
+R18925:18928 Coq.Init.Datatypes <> bool ind
+binder 18903:18903 <> P:64
+R18955:18959 VFA.Color <> graph def
+binder 18952:18952 <> g:65
+R18968:18973 VFA.Color <> fold def
+R19027:19033 VFA.Color <> empty def
+R19025:19025 VFA.Color <> g:65 var
+binder 18980:18980 <> n:66
+binder 18982:18984 <> adj:67
+binder 18986:18986 <> s:68
+R18994:18994 VFA.Color <> P:64 var
+R18998:19000 VFA.Color <> adj:67 var
+R18996:18996 VFA.Color <> n:66 var
+R19022:19022 VFA.Color <> s:68 var
+R19007:19011 VFA.Color <> add def
+R19015:19015 VFA.Color <> s:68 var
+R19013:19013 VFA.Color <> n:66 var
+def 19137:19143 <> low_deg
+R19149:19151 Coq.Init.Datatypes <> nat ind
+binder 19146:19146 <> K:69
+R19158:19161 VFA.Color <> node def
+binder 19155:19155 <> n:70
+R19170:19176 VFA.Color <> nodeset def
+binder 19165:19167 <> adj:71
+R19181:19184 Coq.Init.Datatypes <> bool ind
+R19203:19206 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R19189:19198 VFA.Color <> cardinal def
+R19200:19202 VFA.Color <> adj:71 var
+R19207:19207 VFA.Color <> K:69 var
+def 19222:19232 <> remove_node
+R19238:19241 VFA.Color <> node def
+binder 19235:19235 <> n:72
+R19248:19252 VFA.Color <> graph def
+binder 19245:19245 <> g:73
+R19257:19261 VFA.Color <> graph def
+R19268:19272 VFA.Color <> map def
+R19288:19295 VFA.Color <> remove def
+R19299:19299 VFA.Color <> g:73 var
+R19297:19297 VFA.Color <> n:72 var
+R19275:19282 VFA.Color <> remove def
+R19284:19284 VFA.Color <> n:72 var
+prf 19616:19631 <> subset_nodes_sub
+binder 19642:19642 <> P:74
+binder 19644:19644 <> g:75
+R19647:19654 VFA.Color <> Subset def
+R19676:19680 VFA.Color <> nodes def
+R19682:19682 VFA.Color <> g:75 var
+R19657:19668 VFA.Color <> subset_nodes def
+R19670:19670 VFA.Color <> P:74 var
+R19672:19672 VFA.Color <> g:75 var
+prf 19792:19808 <> select_terminates
+R19825:19827 Coq.Init.Datatypes <> nat ind
+binder 19822:19822 <> K:76
+R19835:19839 VFA.Color <> graph def
+binder 19831:19831 <> g:77
+R19847:19851 VFA.Color <> elt def
+binder 19843:19843 <> n:78
+R19904:19911 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R19895:19897 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R19858:19865 VFA.Color <> choose def
+R19868:19879 VFA.Color <> subset_nodes def
+R19882:19888 VFA.Color <> low_deg def
+R19890:19890 VFA.Color <> K:76 var
+R19893:19893 VFA.Color <> g:77 var
+R19898:19901 Coq.Init.Datatypes <> Some constr
+R19903:19903 VFA.Color <> n:78 var
+R19940:19942 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R19912:19921 VFA.Color <> cardinal def
+R19924:19934 VFA.Color <> remove_node def
+R19936:19936 VFA.Color <> n:78 var
+R19938:19938 VFA.Color <> g:77 var
+R19943:19952 VFA.Color <> cardinal def
+R19954:19954 VFA.Color <> g:77 var
+R20120:20125 Coq.funind.Recdef <> <> lib
+R20203:20205 Coq.Init.Datatypes <> nat ind
+binder 20200:20200 <> K:79
+R20212:20216 VFA.Color <> graph def
+binder 20209:20209 <> g:80
+R20243:20246 Coq.Init.Datatypes <> list ind
+R20248:20251 VFA.Color <> node def
+R20264:20271 VFA.Color <> choose def
+R20274:20285 VFA.Color <> subset_nodes def
+R20288:20294 VFA.Color <> low_deg def
+R20296:20296 VFA.Color <> K:79 var
+R20299:20299 VFA.Color <> g:80 var
+R20311:20314 Coq.Init.Datatypes <> Some constr
+R20322:20325 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20326:20331 VFA.Color <> select:81 def
+R20336:20346 VFA.Color <> remove_node def
+R20350:20350 VFA.Color <> g:80 var
+R20333:20333 VFA.Color <> K:79 var
+R20357:20360 Coq.Init.Datatypes <> None constr
+R20365:20367 Coq.Init.Datatypes <> nil constr
+binder 20200:20200 <> K:82
+binder 20209:20209 <> g:83
+binder 20200:20200 <> K:84
+binder 20209:20209 <> g:85
+binder 20200:20200 <> K:87
+binder 20209:20209 <> g:88
+R20264:20271 VFA.Color <> choose def
+R20274:20285 VFA.Color <> subset_nodes def
+R20288:20294 VFA.Color <> low_deg def
+R20296:20296 VFA.Color <> K:87 var
+R20299:20299 VFA.Color <> g:88 var
+R20311:20314 Coq.Init.Datatypes <> Some constr
+R20322:20325 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20326:20331 VFA.Color <> select:86 def
+R20336:20346 VFA.Color <> remove_node def
+R20350:20350 VFA.Color <> g:88 var
+R20333:20333 VFA.Color <> K:87 var
+R20357:20360 Coq.Init.Datatypes <> None constr
+R20365:20367 Coq.Init.Datatypes <> nil constr
+binder 20200:20200 <> K:89
+binder 20209:20209 <> g:90
+binder 20200:20200 <> K:91
+binder 20209:20209 <> g:92
+R20264:20271 VFA.Color <> choose def
+R20274:20285 VFA.Color <> subset_nodes def
+R20288:20294 VFA.Color <> low_deg def
+R20296:20296 VFA.Color <> K:91 var
+R20299:20299 VFA.Color <> g:92 var
+R20311:20314 Coq.Init.Datatypes <> Some constr
+R20322:20325 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R20326:20331 VFA.Color <> select:86 def
+R20336:20346 VFA.Color <> remove_node def
+R20350:20350 VFA.Color <> g:92 var
+R20333:20333 VFA.Color <> K:91 var
+R20357:20360 Coq.Init.Datatypes <> None constr
+R20365:20367 Coq.Init.Datatypes <> nil constr
+R20228:20237 VFA.Color <> cardinal def
+R20389:20405 VFA.Color <> select_terminates prfax
+R20389:20405 VFA.Color <> select_terminates prfax
+def 20495:20502 <> coloring
+R20507:20509 VFA.Color <> t def
+R20511:20514 VFA.Color <> node def
+def 20529:20537 <> colors_of
+R20543:20550 VFA.Color <> coloring def
+binder 20540:20540 <> f:104
+R20557:20559 VFA.Color <> t def
+binder 20554:20554 <> s:105
+R20564:20566 VFA.Color <> t def
+R20575:20580 VFA.Color <> fold def
+R20655:20661 VFA.Color <> empty def
+R20653:20653 VFA.Color <> s:105 var
+binder 20587:20587 <> n:106
+binder 20589:20589 <> s:107
+R20600:20605 VFA.Color <> find def
+R20609:20609 VFA.Color <> f:104 var
+R20607:20607 VFA.Color <> n:106 var
+R20616:20619 Coq.Init.Datatypes <> Some constr
+R20626:20630 VFA.Color <> add def
+R20634:20634 VFA.Color <> s:107 var
+R20638:20641 Coq.Init.Datatypes <> None constr
+R20646:20646 VFA.Color <> s:107 var
+def 20676:20681 <> color1
+R20693:20695 VFA.Color <> t def
+binder 20684:20690 <> palette:108
+R20702:20706 VFA.Color <> graph def
+binder 20699:20699 <> g:109
+R20713:20716 VFA.Color <> node def
+binder 20710:20710 <> n:110
+R20723:20730 VFA.Color <> coloring def
+binder 20720:20720 <> f:111
+R20735:20742 VFA.Color <> coloring def
+R20756:20763 VFA.Color <> choose def
+R20766:20771 VFA.Color <> diff def
+R20782:20790 VFA.Color <> colors_of def
+R20792:20792 VFA.Color <> f:111 var
+R20795:20797 VFA.Color <> adj def
+R20799:20799 VFA.Color <> g:109 var
+R20801:20801 VFA.Color <> n:110 var
+R20773:20779 VFA.Color <> palette:108 var
+R20816:20819 Coq.Init.Datatypes <> Some constr
+R20826:20830 VFA.Color <> add def
+R20836:20836 VFA.Color <> f:111 var
+R20832:20832 VFA.Color <> n:110 var
+R20843:20846 Coq.Init.Datatypes <> None constr
+R20851:20851 VFA.Color <> f:111 var
+def 20873:20877 <> color
+R20889:20891 VFA.Color <> t def
+binder 20880:20886 <> palette:112
+R20898:20902 VFA.Color <> graph def
+binder 20895:20895 <> g:113
+R20907:20914 VFA.Color <> coloring def
+R20921:20930 Coq.Lists.List <> fold_right def
+R20965:20970 VFA.Color <> select thm
+R20973:20982 VFA.Color <> cardinal def
+R20984:20990 VFA.Color <> palette:112 var
+R20993:20993 VFA.Color <> g:113 var
+R20953:20959 VFA.Color <> empty def
+R20933:20938 VFA.Color <> color1 def
+R20940:20946 VFA.Color <> palette:112 var
+R20948:20948 VFA.Color <> g:113 var
+def 21297:21307 <> coloring_ok
+R21319:21321 VFA.Color <> t def
+binder 21310:21316 <> palette:114
+R21328:21332 VFA.Color <> graph def
+binder 21325:21325 <> g:115
+R21339:21346 VFA.Color <> coloring def
+binder 21336:21336 <> f:116
+binder 21360:21360 <> i:117
+binder 21362:21362 <> j:118
+R21381:21390 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21365:21368 VFA.Color <> In def
+R21373:21375 VFA.Color <> adj def
+R21377:21377 VFA.Color <> g:115 var
+R21379:21379 VFA.Color <> i:117 var
+R21370:21370 VFA.Color <> j:118 var
+R21391:21391 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R21442:21452 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R21521:21521 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 21399:21400 <> ci:119
+R21423:21426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21413:21415 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21403:21408 VFA.Color <> find def
+R21412:21412 VFA.Color <> f:116 var
+R21410:21410 VFA.Color <> i:117 var
+R21416:21419 Coq.Init.Datatypes <> Some constr
+R21421:21422 VFA.Color <> ci:119 var
+R21427:21430 VFA.Color <> In def
+R21435:21441 VFA.Color <> palette:114 var
+R21432:21433 VFA.Color <> ci:119 var
+binder 21460:21461 <> ci:120
+binder 21463:21464 <> cj:121
+R21487:21490 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21477:21479 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21467:21472 VFA.Color <> find def
+R21476:21476 VFA.Color <> f:116 var
+R21474:21474 VFA.Color <> i:117 var
+R21480:21483 Coq.Init.Datatypes <> Some constr
+R21485:21486 VFA.Color <> ci:120 var
+R21511:21514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21501:21503 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21491:21496 VFA.Color <> find def
+R21500:21500 VFA.Color <> f:116 var
+R21498:21498 VFA.Color <> j:118 var
+R21504:21507 Coq.Init.Datatypes <> Some constr
+R21509:21510 VFA.Color <> cj:121 var
+R21517:21518 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R21515:21516 VFA.Color <> ci:120 var
+R21519:21520 VFA.Color <> cj:121 var
+prf 21581:21587 <> adj_ext
+binder 21597:21597 <> g:122
+binder 21599:21599 <> i:123
+binder 21601:21601 <> j:124
+R21612:21615 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21604:21607 VFA.Color <> eq def
+R21609:21609 VFA.Color <> i:123 var
+R21611:21611 VFA.Color <> j:124 var
+R21616:21619 VFA.Color <> eq def
+R21632:21634 VFA.Color <> adj def
+R21636:21636 VFA.Color <> g:122 var
+R21638:21638 VFA.Color <> j:124 var
+R21622:21624 VFA.Color <> adj def
+R21626:21626 VFA.Color <> g:122 var
+R21628:21628 VFA.Color <> i:123 var
+prf 21745:21758 <> in_colors_of_1
+binder 21770:21770 <> i:125
+binder 21772:21772 <> s:126
+binder 21774:21774 <> f:127
+binder 21776:21776 <> c:128
+R21787:21790 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21779:21782 VFA.Color <> In def
+R21786:21786 VFA.Color <> s:126 var
+R21784:21784 VFA.Color <> i:125 var
+R21810:21813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21801:21803 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R21791:21796 VFA.Color <> find def
+R21800:21800 VFA.Color <> f:127 var
+R21798:21798 VFA.Color <> i:125 var
+R21804:21807 Coq.Init.Datatypes <> Some constr
+R21809:21809 VFA.Color <> c:128 var
+R21814:21817 VFA.Color <> In def
+R21822:21830 VFA.Color <> colors_of def
+R21832:21832 VFA.Color <> f:127 var
+R21834:21834 VFA.Color <> s:126 var
+R21819:21819 VFA.Color <> c:128 var
+prf 21942:21954 <> color_correct
+binder 21966:21972 <> palette:129
+binder 21974:21974 <> g:130
+R21998:22009 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R21985:21995 VFA.Color <> no_selfloop def
+R21997:21997 VFA.Color <> g:130 var
+R22022:22033 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R22010:22019 VFA.Color <> undirected def
+R22021:22021 VFA.Color <> g:130 var
+R22034:22044 VFA.Color <> coloring_ok def
+R22046:22052 VFA.Color <> palette:129 var
+R22054:22054 VFA.Color <> g:130 var
+R22057:22061 VFA.Color <> color def
+R22063:22069 VFA.Color <> palette:129 var
+R22071:22071 VFA.Color <> g:130 var
+def 22440:22446 <> palette
+R22449:22451 VFA.Color <> t def
+R22456:22465 Coq.Lists.List <> fold_right def
+R22481:22481 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22483:22484 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22486:22487 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22489:22489 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22473:22479 VFA.Color <> empty def
+R22467:22471 VFA.Color <> add def
+def 22504:22511 <> add_edge
+R22521:22521 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R22518:22520 VFA.Color <> t def
+R22522:22524 VFA.Color <> t def
+binder 22514:22514 <> e:131
+R22532:22536 VFA.Color <> graph def
+binder 22529:22529 <> g:132
+R22541:22545 VFA.Color <> graph def
+R22551:22555 VFA.Color <> add def
+R22601:22605 VFA.Color <> add def
+R22647:22647 VFA.Color <> g:132 var
+R22616:22620 VFA.Color <> add def
+R22631:22633 VFA.Color <> adj def
+R22635:22635 VFA.Color <> g:132 var
+R22638:22640 Coq.Init.Datatypes <> snd def
+R22642:22642 VFA.Color <> e:131 var
+R22623:22625 Coq.Init.Datatypes <> fst def
+R22627:22627 VFA.Color <> e:131 var
+R22608:22610 Coq.Init.Datatypes <> snd def
+R22612:22612 VFA.Color <> e:131 var
+R22566:22570 VFA.Color <> add def
+R22581:22583 VFA.Color <> adj def
+R22585:22585 VFA.Color <> g:132 var
+R22588:22590 Coq.Init.Datatypes <> fst def
+R22592:22592 VFA.Color <> e:131 var
+R22573:22575 Coq.Init.Datatypes <> snd def
+R22577:22577 VFA.Color <> e:131 var
+R22558:22560 Coq.Init.Datatypes <> fst def
+R22562:22562 VFA.Color <> e:131 var
+def 22663:22670 <> mk_graph
+R22677:22680 Coq.Init.Datatypes <> list ind
+R22686:22686 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R22683:22685 VFA.Color <> t def
+R22687:22689 VFA.Color <> t def
+binder 22673:22674 <> el:133
+R22698:22707 Coq.Lists.List <> fold_right def
+R22730:22731 VFA.Color <> el:133 var
+R22719:22725 VFA.Color <> empty def
+R22709:22716 VFA.Color <> add_edge def
+def 22746:22746 <> G
+R22756:22763 VFA.Color <> mk_graph def
+R22765:22766 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22772:22773 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22779:22780 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22786:22787 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22793:22794 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22800:22801 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22807:22808 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22814:22814 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R22767:22767 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22769:22769 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22771:22771 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22774:22774 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22776:22776 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22778:22778 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22781:22781 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22783:22783 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22785:22785 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22788:22788 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22790:22790 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22792:22792 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22795:22795 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22797:22797 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22799:22799 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22802:22802 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22804:22804 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22806:22806 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22809:22809 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22811:22811 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22813:22813 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R22827:22836 VFA.Color <> elements def
+R22839:22845 VFA.Color <> Mdomain def
+R22847:22847 VFA.Color <> G def
+R22886:22895 VFA.Color <> elements def
+R22898:22902 VFA.Color <> color def
+R22904:22910 VFA.Color <> palette def
+R22912:22912 VFA.Color <> G def

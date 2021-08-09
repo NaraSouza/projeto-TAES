@@ -1,0 +1,426 @@
+DIGEST 2a8f97194b709189e2cc2efd12e7b219
+FVFA.Decide
+R159:162 VFA.Perm <> <> lib
+R525:530 Coq.Arith.PeanoNat Nat lt def
+R567:573 Coq.Arith.PeanoNat Nat ltb def
+R866:872 Coq.Bool.Bool <> reflect ind
+R1013:1023 VFA.Perm <> ltb_reflect thm
+def 3104:3121 <> Unnamed_thm
+R3114:3116 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3111:3112 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R3117:3120 Coq.Init.Datatypes <> true constr
+prf 3682:3699 <> three_less_seven_1
+R3703:3703 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R3727:3737 VFA.Perm <> ltb_reflect thm
+R3727:3737 VFA.Perm <> ltb_reflect thm
+R3756:3757 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+R3756:3757 Coq.Arith.PeanoNat <> ::nat_scope:x_'<?'_x not
+prf 4107:4124 <> three_less_seven_2
+R4128:4128 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4152:4162 VFA.Perm <> ltb_reflect thm
+R4152:4162 VFA.Perm <> ltb_reflect thm
+mod 4874:4883 <> ScratchPad
+ind 5382:5388 ScratchPad sumbool
+constr 5415:5418 ScratchPad left
+constr 5442:5446 ScratchPad right
+binder 5391:5391 <> A:1
+binder 5393:5393 <> B:2
+R5423:5426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5422:5422 VFA.Decide <> A:1 var
+R5427:5433 VFA.Decide <> sumbool:3 ind
+R5437:5437 VFA.Decide <> B:2 var
+R5435:5435 VFA.Decide <> A:1 var
+R5451:5454 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5450:5450 VFA.Decide <> B:2 var
+R5455:5461 VFA.Decide <> sumbool:3 ind
+R5465:5465 VFA.Decide <> B:2 var
+R5463:5463 VFA.Decide <> A:1 var
+def 5542:5543 ScratchPad t1
+R5548:5554 VFA.Decide ScratchPad sumbool ind
+R5558:5558 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5564:5564 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+prf 5575:5580 ScratchPad less37
+R5584:5584 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+prf 5611:5619 ScratchPad greater23
+R5623:5623 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+def 5656:5658 ScratchPad v1a
+R5661:5662 VFA.Decide ScratchPad t1 def
+R5667:5670 VFA.Decide ScratchPad left constr
+R5674:5674 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5680:5680 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R5684:5689 VFA.Decide ScratchPad less37 thm
+def 5703:5705 ScratchPad v1b
+R5708:5709 VFA.Decide ScratchPad t1 def
+R5714:5718 VFA.Decide ScratchPad right constr
+R5722:5722 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5728:5728 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R5732:5740 VFA.Decide ScratchPad greater23 thm
+def 5933:5934 ScratchPad t2
+R5939:5945 VFA.Decide ScratchPad sumbool ind
+R5949:5949 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5955:5955 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+def 5971:5973 ScratchPad v2a
+R5976:5977 VFA.Decide ScratchPad t2 def
+R5982:5985 VFA.Decide ScratchPad left constr
+R5989:5989 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5995:5995 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R5999:6004 VFA.Decide ScratchPad less37 thm
+R6418:6424 VFA.Decide ScratchPad sumbool ind
+not 6398:6398 ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}'
+def 6550:6551 ScratchPad t4
+binder 6563:6563 <> a:5
+binder 6565:6565 <> b:6
+R6568:6568 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6572:6574 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6581:6581 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6570:6570 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6569:6569 VFA.Decide <> a:5 var
+R6571:6571 VFA.Decide <> b:6 var
+R6575:6576 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6580:6580 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6578:6578 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6577:6577 VFA.Decide <> a:5 var
+R6579:6579 VFA.Decide <> b:6 var
+def 6947:6948 ScratchPad v3
+R6951:6951 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6955:6957 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6964:6964 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R6953:6953 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6958:6959 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6963:6963 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6961:6961 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6969:6972 VFA.Decide ScratchPad left constr
+R6978:6983 VFA.Decide ScratchPad less37 thm
+def 6998:7008 ScratchPad is_3_less_7
+R7012:7015 Coq.Init.Datatypes <> bool ind
+R7027:7028 VFA.Decide ScratchPad v3 def
+R7038:7041 VFA.Decide ScratchPad left constr
+R7052:7055 Coq.Init.Datatypes <> true constr
+R7060:7064 VFA.Decide ScratchPad right constr
+R7075:7079 Coq.Init.Datatypes <> false constr
+R7104:7114 VFA.Decide ScratchPad is_3_less_7 def
+R7144:7145 VFA.Decide ScratchPad t4 def
+R7817:7827 VFA.Perm <> ltb_reflect thm
+def 7950:7955 ScratchPad lt_dec
+R7961:7963 Coq.Init.Datatypes <> nat ind
+binder 7958:7958 <> a:7
+R7970:7972 Coq.Init.Datatypes <> nat ind
+binder 7967:7967 <> b:8
+R7977:7977 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R7981:7983 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R7990:7990 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R7979:7979 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R7978:7978 VFA.Decide <> a:7 var
+R7980:7980 VFA.Decide <> b:8 var
+R7984:7985 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7989:7989 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7987:7987 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R7986:7986 VFA.Decide <> a:7 var
+R7988:7988 VFA.Decide <> b:8 var
+R8001:8011 VFA.Perm <> ltb_reflect thm
+R8013:8013 VFA.Decide <> a:7 var
+R8015:8015 VFA.Decide <> b:8 var
+R8024:8031 Coq.Bool.Bool <> ReflectT constr
+R8040:8043 VFA.Decide ScratchPad left constr
+R8047:8049 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8046:8046 VFA.Decide <> a:7 var
+R8050:8050 VFA.Decide <> b:8 var
+R8054:8055 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8057:8059 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8056:8056 VFA.Decide <> a:7 var
+R8060:8060 VFA.Decide <> b:8 var
+R8067:8074 Coq.Bool.Bool <> ReflectF constr
+R8083:8087 VFA.Decide ScratchPad right constr
+R8091:8093 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8090:8090 VFA.Decide <> a:7 var
+R8094:8094 VFA.Decide <> b:8 var
+R8098:8099 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8101:8103 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8100:8100 VFA.Decide <> a:7 var
+R8104:8104 VFA.Decide <> b:8 var
+def 8215:8221 ScratchPad lt_dec'
+R8227:8229 Coq.Init.Datatypes <> nat ind
+binder 8224:8224 <> a:9
+R8236:8238 Coq.Init.Datatypes <> nat ind
+binder 8233:8233 <> b:10
+R8243:8243 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R8247:8249 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R8256:8256 VFA.Decide ScratchPad ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R8245:8245 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8244:8244 VFA.Decide <> a:9 var
+R8246:8246 VFA.Decide <> b:10 var
+R8250:8251 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8255:8255 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8253:8253 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8252:8252 VFA.Decide <> a:9 var
+R8254:8254 VFA.Decide <> b:10 var
+R8271:8281 VFA.Perm <> ltb_reflect thm
+R8271:8281 VFA.Perm <> ltb_reflect thm
+R8346:8351 VFA.Decide ScratchPad lt_dec def
+R8360:8366 VFA.Decide ScratchPad lt_dec' def
+prf 8378:8394 ScratchPad lt_dec_equivalent
+binder 8404:8404 <> a:11
+binder 8406:8406 <> b:12
+R8419:8421 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8409:8414 VFA.Decide ScratchPad lt_dec def
+R8416:8416 VFA.Decide <> a:11 var
+R8418:8418 VFA.Decide <> b:12 var
+R8422:8428 VFA.Decide ScratchPad lt_dec' def
+R8430:8430 VFA.Decide <> a:11 var
+R8432:8432 VFA.Decide <> b:12 var
+R8457:8462 VFA.Decide ScratchPad lt_dec def
+R8465:8471 VFA.Decide ScratchPad lt_dec' def
+R8678:8687 VFA.Decide ScratchPad <> mod
+mod 8819:8829 <> ScratchPad2
+R8884:8890 Coq.Init.Specif <> sumbool ind
+def 9105:9110 ScratchPad2 lt_dec
+R9116:9118 Coq.Init.Datatypes <> nat ind
+binder 9113:9113 <> a:13
+R9125:9127 Coq.Init.Datatypes <> nat ind
+binder 9122:9122 <> b:14
+R9132:9132 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9136:9138 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9145:9145 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9134:9134 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R9133:9133 VFA.Decide <> a:13 var
+R9135:9135 VFA.Decide <> b:14 var
+R9139:9140 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9144:9144 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9142:9142 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R9141:9141 VFA.Decide <> a:13 var
+R9143:9143 VFA.Decide <> b:14 var
+R9156:9166 VFA.Perm <> ltb_reflect thm
+R9168:9168 VFA.Decide <> a:13 var
+R9170:9170 VFA.Decide <> b:14 var
+R9179:9186 Coq.Bool.Bool <> ReflectT constr
+R9195:9198 Coq.Init.Specif <> left constr
+R9204:9211 Coq.Bool.Bool <> ReflectF constr
+R9220:9224 Coq.Init.Specif <> right constr
+def 9245:9250 ScratchPad2 le_dec
+R9256:9258 Coq.Init.Datatypes <> nat ind
+binder 9253:9253 <> a:15
+R9265:9267 Coq.Init.Datatypes <> nat ind
+binder 9262:9262 <> b:16
+R9272:9272 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9277:9279 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9287:9287 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R9274:9275 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R9273:9273 VFA.Decide <> a:15 var
+R9276:9276 VFA.Decide <> b:16 var
+R9280:9281 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9286:9286 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9283:9284 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R9282:9282 VFA.Decide <> a:15 var
+R9285:9285 VFA.Decide <> b:16 var
+R9298:9308 VFA.Perm <> leb_reflect thm
+R9310:9310 VFA.Decide <> a:15 var
+R9312:9312 VFA.Decide <> b:16 var
+R9321:9328 Coq.Bool.Bool <> ReflectT constr
+R9337:9340 Coq.Init.Specif <> left constr
+R9346:9353 Coq.Bool.Bool <> ReflectF constr
+R9362:9366 Coq.Init.Specif <> right constr
+def 9503:9508 ScratchPad2 insert
+R9513:9515 Coq.Init.Datatypes <> nat ind
+binder 9511:9511 <> x:17
+R9522:9525 Coq.Init.Datatypes <> list ind
+R9527:9529 Coq.Init.Datatypes <> nat ind
+binder 9519:9519 <> l:18
+R9544:9544 VFA.Decide <> l:18 var
+R9555:9557 Coq.Init.Datatypes <> nil constr
+R9563:9564 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9562:9562 VFA.Decide <> x:17 var
+R9565:9567 Coq.Init.Datatypes <> nil constr
+R9574:9575 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9584:9589 VFA.Decide ScratchPad2 le_dec def
+R9591:9591 VFA.Decide <> x:17 var
+R9614:9617 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9618:9623 VFA.Decide <> insert:19 def
+R9625:9625 VFA.Decide <> x:17 var
+R9601:9602 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9600:9600 VFA.Decide <> x:17 var
+R9604:9605 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+def 9645:9648 ScratchPad2 sort
+R9654:9657 Coq.Init.Datatypes <> list ind
+R9659:9661 Coq.Init.Datatypes <> nat ind
+binder 9651:9651 <> l:21
+R9666:9669 Coq.Init.Datatypes <> list ind
+R9671:9673 Coq.Init.Datatypes <> nat ind
+R9686:9686 VFA.Decide <> l:21 var
+R9697:9699 Coq.Init.Datatypes <> nil constr
+R9704:9706 Coq.Init.Datatypes <> nil constr
+R9713:9714 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9720:9725 VFA.Decide ScratchPad2 insert def
+R9730:9733 VFA.Decide <> sort:22 def
+ind 9754:9759 ScratchPad2 sorted
+constr 9785:9794 ScratchPad2 sorted_nil
+constr 9814:9821 ScratchPad2 sorted_1
+constr 9856:9866 ScratchPad2 sorted_cons
+R9770:9773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9762:9765 Coq.Init.Datatypes <> list ind
+R9767:9769 Coq.Init.Datatypes <> nat ind
+R9801:9806 VFA.Decide <> sorted:24 ind
+R9808:9810 Coq.Init.Datatypes <> nil constr
+binder 9831:9831 <> x:26
+R9838:9843 VFA.Decide <> sorted:24 ind
+R9847:9848 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9846:9846 VFA.Decide <> x:26 var
+R9849:9851 Coq.Init.Datatypes <> nil constr
+binder 9876:9876 <> x:27
+binder 9878:9878 <> y:28
+binder 9880:9880 <> l:29
+R9892:9895 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9887:9890 Coq.Init.Peano <> ::nat_scope:x_'<='_x not
+R9886:9886 VFA.Decide <> x:27 var
+R9891:9891 VFA.Decide <> y:28 var
+R9909:9912 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9896:9901 VFA.Decide <> sorted:24 ind
+R9905:9906 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9904:9904 VFA.Decide <> y:28 var
+R9907:9907 VFA.Decide <> l:29 var
+R9913:9918 VFA.Decide <> sorted:24 ind
+R9922:9923 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9921:9921 VFA.Decide <> x:27 var
+R9925:9926 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9924:9924 VFA.Decide <> y:28 var
+R9927:9927 VFA.Decide <> l:29 var
+prf 10001:10013 ScratchPad2 insert_sorted
+binder 10025:10025 <> a:30
+binder 10027:10027 <> l:31
+R10038:10041 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10030:10035 VFA.Decide ScratchPad2 sorted ind
+R10037:10037 VFA.Decide <> l:31 var
+R10042:10047 VFA.Decide ScratchPad2 sorted ind
+R10050:10055 VFA.Decide ScratchPad2 insert def
+R10057:10057 VFA.Decide <> a:30 var
+R10059:10059 VFA.Decide <> l:31 var
+R10129:10134 VFA.Decide ScratchPad2 insert def
+R10151:10156 VFA.Decide ScratchPad2 le_dec def
+R10151:10156 VFA.Decide ScratchPad2 le_dec def
+ax 12886:12899 ScratchPad2 lt_dec_axiom_1
+R12915:12917 Coq.Init.Datatypes <> nat ind
+binder 12910:12910 <> i:32
+binder 12912:12912 <> j:33
+R12923:12926 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R12921:12921 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R12920:12920 VFA.Decide <> i:32 var
+R12922:12922 VFA.Decide <> j:33 var
+R12927:12928 Coq.Init.Logic <> ::type_scope:'~'_x not
+R12932:12932 Coq.Init.Logic <> ::type_scope:'~'_x not
+R12930:12930 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R12929:12929 VFA.Decide <> i:32 var
+R12931:12931 VFA.Decide <> j:33 var
+ax 13334:13347 ScratchPad2 lt_dec_axiom_2
+R13363:13365 Coq.Init.Datatypes <> nat ind
+binder 13358:13358 <> i:35
+binder 13360:13360 <> j:36
+R13368:13368 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R13372:13376 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R13383:13383 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R13370:13370 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R13369:13369 VFA.Decide <> i:35 var
+R13371:13371 VFA.Decide <> j:36 var
+R13377:13378 Coq.Init.Logic <> ::type_scope:'~'_x not
+R13382:13382 Coq.Init.Logic <> ::type_scope:'~'_x not
+R13380:13380 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R13379:13379 VFA.Decide <> i:35 var
+R13381:13381 VFA.Decide <> j:36 var
+def 13398:13411 ScratchPad2 max_with_axiom
+R13419:13421 Coq.Init.Datatypes <> nat ind
+binder 13414:13414 <> i:38
+binder 13416:13416 <> j:39
+R13426:13428 Coq.Init.Datatypes <> nat ind
+R13439:13452 VFA.Decide ScratchPad2 lt_dec_axiom_2 prfax
+R13454:13454 VFA.Decide <> i:38 var
+R13456:13456 VFA.Decide <> j:39 var
+R13470:13470 VFA.Decide <> i:38 var
+R13463:13463 VFA.Decide <> j:39 var
+R13705:13718 VFA.Decide ScratchPad2 max_with_axiom def
+prf 13885:13904 ScratchPad2 prove_with_max_axiom
+R13927:13929 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13909:13922 VFA.Decide ScratchPad2 max_with_axiom def
+R13947:13960 VFA.Decide ScratchPad2 max_with_axiom def
+R14102:14115 VFA.Decide ScratchPad2 lt_dec_axiom_2 prfax
+R14102:14115 VFA.Decide ScratchPad2 lt_dec_axiom_2 prfax
+R14576:14586 VFA.Decide ScratchPad2 <> mod
+prf 14889:14907 <> compute_with_lt_dec
+R14911:14911 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14951:14954 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R14915:14932 VFA.Decide <> lt_dec def
+prf 15684:15709 <> compute_with_StdLib_lt_dec
+R15713:15713 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15741:15744 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R15717:15722 Coq.Arith.Compare_dec <> lt_dec thm
+R16079:16079 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R16081:16083 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R16086:16086 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R16084:16084 Coq.Init.Logic <> ::type_scope:'~'_x not
+def 17365:17379 <> list_nat_eq_dec
+R17403:17406 Coq.Init.Datatypes <> list ind
+R17408:17410 Coq.Init.Datatypes <> nat ind
+binder 17395:17396 <> al:40
+binder 17398:17399 <> bl:41
+R17413:17413 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R17419:17421 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R17428:17428 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R17416:17416 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17414:17415 VFA.Decide <> al:40 var
+R17417:17418 VFA.Decide <> bl:41 var
+R17424:17425 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R17422:17423 VFA.Decide <> al:40 var
+R17426:17427 VFA.Decide <> bl:41 var
+R17436:17446 Coq.Lists.List <> list_eq_dec thm
+R17448:17457 Coq.Arith.Peano_dec <> eq_nat_dec syndef
+R17480:17494 VFA.Decide <> list_nat_eq_dec def
+R17496:17496 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17498:17498 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17500:17500 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17502:17502 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17504:17504 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17506:17506 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17508:17508 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17510:17510 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17527:17531 Coq.Init.Datatypes <> false constr
+R17517:17520 Coq.Init.Datatypes <> true constr
+R17576:17590 VFA.Decide <> list_nat_eq_dec def
+R17592:17592 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17594:17594 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17596:17596 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17598:17598 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17600:17600 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17602:17602 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17604:17604 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17606:17606 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17623:17627 Coq.Init.Datatypes <> false constr
+R17613:17616 Coq.Init.Datatypes <> true constr
+def 17760:17770 <> list_nat_in
+R17784:17786 Coq.Init.Datatypes <> nat ind
+binder 17781:17781 <> i:42
+R17794:17797 Coq.Init.Datatypes <> list ind
+R17799:17801 Coq.Init.Datatypes <> nat ind
+binder 17790:17791 <> al:43
+R17805:17805 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R17813:17815 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R17825:17825 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R17806:17807 Coq.Lists.List <> In def
+R17811:17812 VFA.Decide <> al:43 var
+R17809:17809 VFA.Decide <> i:42 var
+R17816:17817 Coq.Init.Logic <> ::type_scope:'~'_x not
+R17818:17819 Coq.Lists.List <> In def
+R17823:17824 VFA.Decide <> al:43 var
+R17821:17821 VFA.Decide <> i:42 var
+def 17902:17908 <> in_4_pi
+R17912:17912 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17969:17972 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R17916:17926 VFA.Decide <> list_nat_in prfax
+R17931:17931 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17933:17933 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17935:17935 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17937:17937 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17939:17939 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17941:17941 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17943:17943 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17945:17945 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17947:17947 Coq.Lists.List ListNotations ::list_scope:'['_x_';'_x_';'_'..'_';'_x_']' not
+R17964:17968 Coq.Init.Datatypes <> false constr
+R17954:17957 Coq.Init.Datatypes <> true constr
+R17973:17976 Coq.Init.Datatypes <> true constr

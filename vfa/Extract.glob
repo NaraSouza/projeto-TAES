@@ -1,0 +1,539 @@
+DIGEST 7cfa9f9f8b92e7244bb14ec7b66e2f4e
+FVFA.Extract
+R656:659 VFA.Perm <> <> lib
+R670:679 Coq.extraction.Extraction <> <> lib
+def 874:876 <> ins
+R883:885 Coq.Init.Datatypes <> nat ind
+binder 879:879 <> i:1
+R893:896 Coq.Init.Datatypes <> list ind
+R898:900 Coq.Init.Datatypes <> nat ind
+binder 889:889 <> l:2
+R914:914 VFA.Extract <> l:2 var
+R925:926 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R931:931 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R933:933 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R932:932 VFA.Extract <> i:1 var
+R940:943 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R953:957 Coq.Arith.PeanoNat <> ::nat_scope:x_'<=?'_x not
+R952:952 VFA.Extract <> i:1 var
+R983:986 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R987:989 VFA.Extract <> ins:3 def
+R991:991 VFA.Extract <> i:1 var
+R966:969 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R965:965 VFA.Extract <> i:1 var
+R971:974 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+def 1012:1015 <> sort
+R1022:1025 Coq.Init.Datatypes <> list ind
+R1027:1029 Coq.Init.Datatypes <> nat ind
+binder 1018:1018 <> l:5
+R1034:1037 Coq.Init.Datatypes <> list ind
+R1039:1041 Coq.Init.Datatypes <> nat ind
+R1054:1054 VFA.Extract <> l:5 var
+R1065:1066 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1071:1072 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R1079:1082 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R1088:1090 VFA.Extract <> ins def
+R1095:1098 VFA.Extract <> sort:6 def
+R1983:1986 Coq.Init.Datatypes <> bool ind
+R2036:2039 Coq.Init.Datatypes <> list ind
+R2562:2567 Coq.ZArith.ZArith <> <> lib
+def 2600:2606 <> insertZ
+R2613:2613 Coq.Numbers.BinNums <> Z ind
+binder 2609:2609 <> i:8
+R2621:2624 Coq.Init.Datatypes <> list ind
+R2626:2626 Coq.Numbers.BinNums <> Z ind
+binder 2617:2617 <> l:9
+R2640:2640 VFA.Extract <> l:9 var
+R2651:2652 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2657:2657 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2659:2659 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R2658:2658 VFA.Extract <> i:8 var
+R2666:2669 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2679:2683 Coq.ZArith.BinInt <> ::Z_scope:x_'<=?'_x not
+R2678:2678 VFA.Extract <> i:8 var
+R2709:2712 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2713:2719 VFA.Extract <> insertZ:10 def
+R2721:2721 VFA.Extract <> i:8 var
+R2692:2695 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2691:2691 VFA.Extract <> i:8 var
+R2697:2700 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+def 2742:2746 <> sortZ
+R2753:2756 Coq.Init.Datatypes <> list ind
+R2758:2758 Coq.Numbers.BinNums <> Z ind
+binder 2749:2749 <> l:12
+R2763:2766 Coq.Init.Datatypes <> list ind
+R2768:2768 Coq.Numbers.BinNums <> Z ind
+R2781:2781 VFA.Extract <> l:12 var
+R2792:2793 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2798:2799 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R2806:2809 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R2815:2821 VFA.Extract <> insertZ def
+R2826:2830 VFA.Extract <> sortZ:13 def
+ax 3860:3862 <> int
+ax 4067:4069 <> Abs
+R4076:4079 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4073:4075 VFA.Extract <> int defax
+R4080:4080 Coq.Numbers.BinNums <> Z ind
+ax 4089:4095 <> Abs_inj
+R4112:4114 VFA.Extract <> int defax
+binder 4106:4106 <> n:17
+binder 4108:4108 <> m:18
+R4131:4134 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4123:4125 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4118:4120 VFA.Extract <> Abs defax
+R4122:4122 VFA.Extract <> n:17 var
+R4126:4128 VFA.Extract <> Abs defax
+R4130:4130 VFA.Extract <> m:18 var
+R4136:4138 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4135:4135 VFA.Extract <> n:17 var
+R4139:4139 VFA.Extract <> m:18 var
+ax 4272:4274 <> ltb
+R4280:4283 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4277:4279 VFA.Extract <> int defax
+R4287:4290 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4284:4286 VFA.Extract <> int defax
+R4291:4294 Coq.Init.Datatypes <> bool ind
+ax 4342:4347 <> ltb_lt
+R4365:4367 VFA.Extract <> int defax
+binder 4359:4359 <> n:21
+binder 4361:4361 <> m:22
+R4385:4389 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4378:4380 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4371:4373 VFA.Extract <> ltb defax
+R4375:4375 VFA.Extract <> n:21 var
+R4377:4377 VFA.Extract <> m:22 var
+R4381:4384 Coq.Init.Datatypes <> true constr
+R4395:4397 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R4390:4392 VFA.Extract <> Abs defax
+R4394:4394 VFA.Extract <> n:21 var
+R4398:4400 VFA.Extract <> Abs defax
+R4402:4402 VFA.Extract <> m:22 var
+ax 4416:4418 <> leb
+R4424:4427 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4421:4423 VFA.Extract <> int defax
+R4431:4434 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4428:4430 VFA.Extract <> int defax
+R4435:4438 Coq.Init.Datatypes <> bool ind
+ax 4487:4492 <> leb_le
+R4510:4512 VFA.Extract <> int defax
+binder 4504:4504 <> n:25
+binder 4506:4506 <> m:26
+R4530:4534 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R4523:4525 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4516:4518 VFA.Extract <> leb defax
+R4520:4520 VFA.Extract <> n:25 var
+R4522:4522 VFA.Extract <> m:26 var
+R4526:4529 Coq.Init.Datatypes <> true constr
+R4540:4543 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R4535:4537 VFA.Extract <> Abs defax
+R4539:4539 VFA.Extract <> n:25 var
+R4544:4546 VFA.Extract <> Abs defax
+R4548:4548 VFA.Extract <> m:26 var
+prf 5611:5625 <> int_ltb_reflect
+binder 5636:5636 <> x:28
+binder 5638:5638 <> y:29
+R5641:5647 Coq.Bool.Bool <> reflect ind
+R5655:5657 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R5650:5652 VFA.Extract <> Abs defax
+R5654:5654 VFA.Extract <> x:28 var
+R5658:5660 VFA.Extract <> Abs defax
+R5662:5662 VFA.Extract <> y:29 var
+R5666:5668 VFA.Extract <> ltb defax
+R5670:5670 VFA.Extract <> x:28 var
+R5672:5672 VFA.Extract <> y:29 var
+R5705:5715 Coq.Bool.Bool <> iff_reflect thm
+R5705:5715 Coq.Bool.Bool <> iff_reflect thm
+R5734:5739 VFA.Extract <> ltb_lt prfax
+R5734:5739 VFA.Extract <> ltb_lt prfax
+prf 5754:5768 <> int_leb_reflect
+binder 5779:5779 <> x:30
+binder 5781:5781 <> y:31
+R5784:5790 Coq.Bool.Bool <> reflect ind
+R5798:5801 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R5793:5795 VFA.Extract <> Abs defax
+R5797:5797 VFA.Extract <> x:30 var
+R5802:5804 VFA.Extract <> Abs defax
+R5806:5806 VFA.Extract <> y:31 var
+R5810:5812 VFA.Extract <> leb defax
+R5814:5814 VFA.Extract <> x:30 var
+R5816:5816 VFA.Extract <> y:31 var
+R5849:5859 Coq.Bool.Bool <> iff_reflect thm
+R5849:5859 Coq.Bool.Bool <> iff_reflect thm
+R5878:5883 VFA.Extract <> leb_le prfax
+R5878:5883 VFA.Extract <> leb_le prfax
+prf 5898:5910 <> Z_eqb_reflect
+binder 5921:5921 <> x:32
+binder 5923:5923 <> y:33
+R5926:5932 Coq.Bool.Bool <> reflect ind
+R5936:5938 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5935:5935 VFA.Extract <> x:32 var
+R5939:5939 VFA.Extract <> y:33 var
+R5943:5947 Coq.ZArith.BinInt Z eqb def
+R5949:5949 VFA.Extract <> x:32 var
+R5951:5951 VFA.Extract <> y:33 var
+R5984:5994 Coq.Bool.Bool <> iff_reflect thm
+R5984:5994 Coq.Bool.Bool <> iff_reflect thm
+R6013:6020 Coq.ZArith.BinInt Z eqb_eq thm
+R6013:6020 Coq.ZArith.BinInt Z eqb_eq thm
+prf 6035:6047 <> Z_ltb_reflect
+binder 6058:6058 <> x:34
+binder 6060:6060 <> y:35
+R6063:6069 Coq.Bool.Bool <> reflect ind
+R6073:6075 Coq.ZArith.BinInt <> ::Z_scope:x_'<'_x not
+R6072:6072 VFA.Extract <> x:34 var
+R6076:6076 VFA.Extract <> y:35 var
+R6080:6084 Coq.ZArith.BinInt Z ltb def
+R6086:6086 VFA.Extract <> x:34 var
+R6088:6088 VFA.Extract <> y:35 var
+R6121:6131 Coq.Bool.Bool <> iff_reflect thm
+R6121:6131 Coq.Bool.Bool <> iff_reflect thm
+R6150:6157 Coq.ZArith.BinInt Z ltb_lt thm
+R6150:6157 Coq.ZArith.BinInt Z ltb_lt thm
+prf 6172:6184 <> Z_leb_reflect
+binder 6195:6195 <> x:36
+binder 6197:6197 <> y:37
+R6200:6206 Coq.Bool.Bool <> reflect ind
+R6210:6213 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R6209:6209 VFA.Extract <> x:36 var
+R6214:6214 VFA.Extract <> y:37 var
+R6218:6222 Coq.ZArith.BinInt Z leb def
+R6224:6224 VFA.Extract <> x:36 var
+R6226:6226 VFA.Extract <> y:37 var
+R6259:6269 Coq.Bool.Bool <> iff_reflect thm
+R6259:6269 Coq.Bool.Bool <> iff_reflect thm
+R6288:6295 Coq.ZArith.BinInt Z leb_le thm
+R6288:6295 Coq.ZArith.BinInt Z leb_le thm
+prf 6310:6322 <> Z_gtb_reflect
+binder 6333:6333 <> x:38
+binder 6335:6335 <> y:39
+R6338:6344 Coq.Bool.Bool <> reflect ind
+R6348:6350 Coq.ZArith.BinInt <> ::Z_scope:x_'>'_x not
+R6347:6347 VFA.Extract <> x:38 var
+R6351:6351 VFA.Extract <> y:39 var
+R6355:6359 Coq.ZArith.BinInt Z gtb def
+R6361:6361 VFA.Extract <> x:38 var
+R6363:6363 VFA.Extract <> y:39 var
+R6396:6406 Coq.Bool.Bool <> iff_reflect thm
+R6396:6406 Coq.Bool.Bool <> iff_reflect thm
+R6427:6435 Coq.ZArith.BinInt Z gtb_ltb thm
+R6427:6435 Coq.ZArith.BinInt Z gtb_ltb thm
+R6427:6435 Coq.ZArith.BinInt Z gtb_ltb thm
+R6446:6456 Coq.ZArith.BinInt Z gt_lt_iff thm
+R6446:6456 Coq.ZArith.BinInt Z gt_lt_iff thm
+R6446:6456 Coq.ZArith.BinInt Z gt_lt_iff thm
+R6465:6472 Coq.ZArith.BinInt Z ltb_lt thm
+R6465:6472 Coq.ZArith.BinInt Z ltb_lt thm
+prf 6487:6499 <> Z_geb_reflect
+binder 6510:6510 <> x:40
+binder 6512:6512 <> y:41
+R6515:6521 Coq.Bool.Bool <> reflect ind
+R6525:6528 Coq.ZArith.BinInt <> ::Z_scope:x_'>='_x not
+R6524:6524 VFA.Extract <> x:40 var
+R6529:6529 VFA.Extract <> y:41 var
+R6533:6537 Coq.ZArith.BinInt Z geb def
+R6539:6539 VFA.Extract <> x:40 var
+R6541:6541 VFA.Extract <> y:41 var
+R6574:6584 Coq.Bool.Bool <> iff_reflect thm
+R6574:6584 Coq.Bool.Bool <> iff_reflect thm
+R6605:6613 Coq.ZArith.BinInt Z geb_leb thm
+R6605:6613 Coq.ZArith.BinInt Z geb_leb thm
+R6605:6613 Coq.ZArith.BinInt Z geb_leb thm
+R6624:6634 Coq.ZArith.BinInt Z ge_le_iff thm
+R6624:6634 Coq.ZArith.BinInt Z ge_le_iff thm
+R6624:6634 Coq.ZArith.BinInt Z ge_le_iff thm
+R6643:6650 Coq.ZArith.BinInt Z leb_le thm
+R6643:6650 Coq.ZArith.BinInt Z leb_le thm
+R6921:6927 Coq.Arith.PeanoNat Nat eqb def
+R6921:6927 Coq.Arith.PeanoNat Nat eqb def
+R6997:7003 Coq.Arith.PeanoNat Nat ltb def
+R6997:7003 Coq.Arith.PeanoNat Nat ltb def
+R7073:7079 Coq.Arith.PeanoNat Nat leb def
+R7073:7079 Coq.Arith.PeanoNat Nat leb def
+R7149:7153 Coq.ZArith.BinInt Z eqb def
+R7149:7153 Coq.ZArith.BinInt Z eqb def
+R7221:7225 Coq.ZArith.BinInt Z ltb def
+R7221:7225 Coq.ZArith.BinInt Z ltb def
+R7293:7297 Coq.ZArith.BinInt Z leb def
+R7293:7297 Coq.ZArith.BinInt Z leb def
+R7365:7369 Coq.ZArith.BinInt Z gtb def
+R7365:7369 Coq.ZArith.BinInt Z gtb def
+R7437:7441 Coq.ZArith.BinInt Z geb def
+R7437:7441 Coq.ZArith.BinInt Z geb def
+R7509:7511 VFA.Extract <> ltb defax
+R7509:7511 VFA.Extract <> ltb defax
+R7577:7579 VFA.Extract <> leb defax
+R7577:7579 VFA.Extract <> leb defax
+R7616:7618 VFA.Extract <> leb defax
+R7548:7550 VFA.Extract <> ltb defax
+R7478:7482 Coq.ZArith.BinInt Z geb def
+R7406:7410 Coq.ZArith.BinInt Z gtb def
+R7334:7338 Coq.ZArith.BinInt Z leb def
+R7262:7266 Coq.ZArith.BinInt Z ltb def
+R7190:7194 Coq.ZArith.BinInt Z eqb def
+R7116:7122 Coq.Arith.PeanoNat Nat leb def
+R7040:7046 Coq.Arith.PeanoNat Nat ltb def
+R6964:6970 Coq.Arith.PeanoNat Nat eqb def
+def 7890:7896 <> ins_int
+R7903:7905 VFA.Extract <> int defax
+binder 7899:7899 <> i:42
+R7913:7916 Coq.Init.Datatypes <> list ind
+R7918:7920 VFA.Extract <> int defax
+binder 7909:7909 <> l:43
+R7934:7934 VFA.Extract <> l:43 var
+R7945:7946 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R7951:7951 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7953:7953 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R7952:7952 VFA.Extract <> i:42 var
+R7960:7963 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7972:7974 VFA.Extract <> leb defax
+R7976:7976 VFA.Extract <> i:42 var
+R8003:8006 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8007:8013 VFA.Extract <> ins_int:44 def
+R8015:8015 VFA.Extract <> i:42 var
+R7986:7989 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R7985:7985 VFA.Extract <> i:42 var
+R7991:7994 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+def 8036:8043 <> sort_int
+R8050:8053 Coq.Init.Datatypes <> list ind
+R8055:8057 VFA.Extract <> int defax
+binder 8046:8046 <> l:46
+R8062:8065 Coq.Init.Datatypes <> list ind
+R8067:8069 VFA.Extract <> int defax
+R8082:8082 VFA.Extract <> l:46 var
+R8093:8094 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8099:8100 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R8107:8110 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8116:8122 VFA.Extract <> ins_int def
+R8127:8134 VFA.Extract <> sort_int:47 def
+ind 8527:8532 <> sorted
+constr 8558:8567 <> sorted_nil
+constr 8586:8593 <> sorted_1
+constr 8623:8633 <> sorted_cons
+R8544:8547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8536:8539 Coq.Init.Datatypes <> list ind
+R8541:8543 VFA.Extract <> int defax
+R8574:8579 VFA.Extract <> sorted:49 ind
+R8581:8582 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+binder 8603:8603 <> x:51
+R8610:8615 VFA.Extract <> sorted:49 ind
+R8617:8617 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R8619:8619 Coq.Lists.List ListNotations ::list_scope:'['_x_']' not
+R8618:8618 VFA.Extract <> x:51 var
+binder 8643:8643 <> x:52
+binder 8645:8645 <> y:53
+binder 8647:8647 <> l:54
+R8668:8671 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8659:8662 Coq.ZArith.BinInt <> ::Z_scope:x_'<='_x not
+R8654:8656 VFA.Extract <> Abs defax
+R8658:8658 VFA.Extract <> x:52 var
+R8663:8665 VFA.Extract <> Abs defax
+R8667:8667 VFA.Extract <> y:53 var
+R8687:8690 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8672:8677 VFA.Extract <> sorted:49 ind
+R8681:8684 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8680:8680 VFA.Extract <> y:53 var
+R8685:8685 VFA.Extract <> l:54 var
+R8691:8696 VFA.Extract <> sorted:49 ind
+R8700:8703 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8699:8699 VFA.Extract <> x:52 var
+R8705:8708 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8704:8704 VFA.Extract <> y:53 var
+R8709:8709 VFA.Extract <> l:54 var
+R8732:8737 VFA.Extract <> sorted ind
+prf 8924:8939 <> sort_int_correct
+R8956:8959 Coq.Init.Datatypes <> list ind
+R8961:8963 VFA.Extract <> int defax
+binder 8951:8952 <> al:55
+R8999:9002 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8971:8981 Coq.Sorting.Permutation <> Permutation ind
+R8987:8994 VFA.Extract <> sort_int def
+R8996:8997 VFA.Extract <> al:55 var
+R8983:8984 VFA.Extract <> al:55 var
+R9003:9008 VFA.Extract <> sorted ind
+R9011:9018 VFA.Extract <> sort_int def
+R9020:9021 VFA.Extract <> al:55 var
+def 9248:9250 <> key
+R9255:9257 VFA.Extract <> int defax
+ind 9271:9274 <> tree
+constr 9301:9301 <> E
+constr 9316:9316 <> T
+binder 9277:9277 <> V:56
+R9305:9308 VFA.Extract <> tree:57 ind
+R9310:9310 VFA.Extract <> V:56 var
+R9326:9329 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9320:9323 VFA.Extract <> tree:57 ind
+R9325:9325 VFA.Extract <> V:56 var
+R9333:9336 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9330:9332 VFA.Extract <> key def
+R9338:9341 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9337:9337 VFA.Extract <> V:56 var
+R9348:9351 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9342:9345 VFA.Extract <> tree:57 ind
+R9347:9347 VFA.Extract <> V:56 var
+R9352:9355 VFA.Extract <> tree:57 ind
+R9357:9357 VFA.Extract <> V:56 var
+R9371:9371 VFA.Extract <> E constr
+R9371:9371 VFA.Extract <> E constr
+R9388:9388 VFA.Extract <> T constr
+R9388:9388 VFA.Extract <> T constr
+def 9407:9416 <> empty_tree
+binder 9419:9419 <> V:59
+R9431:9434 VFA.Extract <> tree ind
+R9436:9436 VFA.Extract <> V:59 var
+R9441:9441 VFA.Extract <> E constr
+def 9454:9459 <> lookup
+binder 9462:9462 <> V:60
+R9483:9483 VFA.Extract <> V:60 var
+binder 9473:9479 <> default:61
+R9491:9493 VFA.Extract <> key def
+binder 9487:9487 <> x:62
+R9501:9504 VFA.Extract <> tree ind
+R9506:9506 VFA.Extract <> V:60 var
+binder 9497:9497 <> t:63
+R9511:9511 VFA.Extract <> V:60 var
+R9524:9524 VFA.Extract <> t:63 var
+R9535:9535 VFA.Extract <> E constr
+R9540:9546 VFA.Extract <> default:61 var
+R9552:9552 VFA.Extract <> T constr
+R9568:9570 VFA.Extract <> ltb defax
+R9572:9572 VFA.Extract <> x:62 var
+R9624:9626 VFA.Extract <> ltb defax
+R9630:9630 VFA.Extract <> x:62 var
+R9637:9642 VFA.Extract <> lookup:64 def
+R9652:9652 VFA.Extract <> x:62 var
+R9644:9650 VFA.Extract <> default:61 var
+R9581:9586 VFA.Extract <> lookup:64 def
+R9596:9596 VFA.Extract <> x:62 var
+R9588:9594 VFA.Extract <> default:61 var
+def 9701:9706 <> insert
+binder 9709:9709 <> V:66
+R9724:9726 VFA.Extract <> key def
+binder 9720:9720 <> x:67
+R9734:9734 VFA.Extract <> V:66 var
+binder 9730:9730 <> v:68
+R9742:9745 VFA.Extract <> tree ind
+R9747:9747 VFA.Extract <> V:66 var
+binder 9738:9738 <> t:69
+R9752:9755 VFA.Extract <> tree ind
+R9757:9757 VFA.Extract <> V:66 var
+R9770:9770 VFA.Extract <> t:69 var
+R9781:9781 VFA.Extract <> E constr
+R9786:9786 VFA.Extract <> T constr
+R9794:9794 VFA.Extract <> E constr
+R9792:9792 VFA.Extract <> v:68 var
+R9790:9790 VFA.Extract <> x:67 var
+R9788:9788 VFA.Extract <> E constr
+R9800:9800 VFA.Extract <> T constr
+R9817:9819 VFA.Extract <> ltb defax
+R9821:9821 VFA.Extract <> x:67 var
+R9879:9881 VFA.Extract <> ltb defax
+R9885:9885 VFA.Extract <> x:67 var
+R9943:9943 VFA.Extract <> T constr
+R9949:9949 VFA.Extract <> v:68 var
+R9947:9947 VFA.Extract <> x:67 var
+R9892:9892 VFA.Extract <> T constr
+R9902:9907 VFA.Extract <> insert:70 def
+R9911:9911 VFA.Extract <> v:68 var
+R9909:9909 VFA.Extract <> x:67 var
+R9830:9830 VFA.Extract <> T constr
+R9833:9838 VFA.Extract <> insert:70 def
+R9842:9842 VFA.Extract <> v:68 var
+R9840:9840 VFA.Extract <> x:67 var
+def 9970:9980 <> elements_tr
+binder 9983:9983 <> V:72
+R10007:10010 VFA.Extract <> tree ind
+R10012:10012 VFA.Extract <> V:72 var
+binder 10003:10003 <> t:73
+R10022:10025 Coq.Init.Datatypes <> list ind
+R10031:10033 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10028:10030 VFA.Extract <> key def
+R10034:10034 VFA.Extract <> V:72 var
+binder 10016:10018 <> acc:74
+R10040:10043 Coq.Init.Datatypes <> list ind
+R10049:10051 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10046:10048 VFA.Extract <> key def
+R10052:10052 VFA.Extract <> V:72 var
+R10066:10066 VFA.Extract <> t:73 var
+R10077:10077 VFA.Extract <> E constr
+R10082:10084 VFA.Extract <> acc:74 var
+R10090:10090 VFA.Extract <> T constr
+R10103:10113 VFA.Extract <> elements_tr:75 def
+R10124:10127 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R10118:10118 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10120:10121 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10123:10123 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R10128:10138 VFA.Extract <> elements_tr:75 def
+R10142:10144 VFA.Extract <> acc:74 var
+def 10166:10173 <> elements
+binder 10176:10176 <> V:77
+R10191:10194 VFA.Extract <> tree ind
+R10196:10196 VFA.Extract <> V:77 var
+binder 10187:10187 <> t:78
+R10201:10204 Coq.Init.Datatypes <> list ind
+R10210:10212 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10207:10209 VFA.Extract <> key def
+R10213:10213 VFA.Extract <> V:77 var
+R10221:10231 VFA.Extract <> elements_tr def
+R10235:10236 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10233:10233 VFA.Extract <> t:78 var
+prf 10248:10259 <> lookup_empty
+binder 10271:10271 <> V:79
+R10292:10292 VFA.Extract <> V:79 var
+binder 10282:10288 <> default:80
+R10300:10302 VFA.Extract <> key def
+binder 10296:10296 <> k:81
+R10337:10339 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10310:10315 VFA.Extract <> lookup def
+R10327:10336 VFA.Extract <> empty_tree def
+R10325:10325 VFA.Extract <> k:81 var
+R10317:10323 VFA.Extract <> default:80 var
+R10340:10346 VFA.Extract <> default:80 var
+prf 10435:10450 <> lookup_insert_eq
+binder 10464:10464 <> V:82
+R10485:10485 VFA.Extract <> V:82 var
+binder 10475:10481 <> default:83
+R10493:10496 VFA.Extract <> tree ind
+R10498:10498 VFA.Extract <> V:82 var
+binder 10489:10489 <> t:84
+R10506:10508 VFA.Extract <> key def
+binder 10502:10502 <> k:85
+R10516:10516 VFA.Extract <> V:82 var
+binder 10512:10512 <> v:86
+R10555:10557 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10524:10529 VFA.Extract <> lookup def
+R10542:10547 VFA.Extract <> insert def
+R10553:10553 VFA.Extract <> t:84 var
+R10551:10551 VFA.Extract <> v:86 var
+R10549:10549 VFA.Extract <> k:85 var
+R10539:10539 VFA.Extract <> k:85 var
+R10531:10537 VFA.Extract <> default:83 var
+R10558:10558 VFA.Extract <> v:86 var
+prf 10678:10694 <> lookup_insert_neq
+binder 10708:10708 <> V:87
+R10729:10729 VFA.Extract <> V:87 var
+binder 10719:10725 <> default:88
+R10737:10740 VFA.Extract <> tree ind
+R10742:10742 VFA.Extract <> V:87 var
+binder 10733:10733 <> t:89
+R10753:10755 VFA.Extract <> key def
+binder 10746:10746 <> k:90
+binder 10748:10749 <> k':91
+R10763:10763 VFA.Extract <> V:87 var
+binder 10759:10759 <> v:92
+R10778:10781 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10772:10775 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10771:10771 VFA.Extract <> k:90 var
+R10776:10777 VFA.Extract <> k':91 var
+R10814:10816 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10782:10787 VFA.Extract <> lookup def
+R10801:10806 VFA.Extract <> insert def
+R10812:10812 VFA.Extract <> t:89 var
+R10810:10810 VFA.Extract <> v:92 var
+R10808:10808 VFA.Extract <> k:90 var
+R10797:10798 VFA.Extract <> k':91 var
+R10789:10795 VFA.Extract <> default:88 var
+R10817:10822 VFA.Extract <> lookup def
+R10835:10835 VFA.Extract <> t:89 var
+R10832:10833 VFA.Extract <> k':91 var
+R10824:10830 VFA.Extract <> default:88 var
+R11180:11183 Coq.Init.Datatypes <> prod ind

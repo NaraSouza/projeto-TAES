@@ -1,0 +1,896 @@
+DIGEST b6f67400f29b3137776cd6925b011537
+FVFA.AVLTrees
+R684:693 VFA.SearchTree <> <> lib
+ind 1973:1975 <> day
+constr 1991:1996 <> monday
+constr 2002:2008 <> tuesday
+constr 2014:2022 <> wednesday
+constr 2028:2035 <> thursday
+constr 2041:2046 <> friday
+constr 2052:2059 <> saturday
+constr 2065:2070 <> sunday
+def 2249:2260 <> next_weekday
+R2265:2267 VFA.AVLTrees <> day ind
+binder 2263:2263 <> d:3
+R2272:2274 VFA.AVLTrees <> day ind
+R2287:2287 VFA.AVLTrees <> d:3 var
+R2298:2303 VFA.AVLTrees <> monday constr
+R2311:2317 VFA.AVLTrees <> tuesday constr
+R2323:2329 VFA.AVLTrees <> tuesday constr
+R2336:2344 VFA.AVLTrees <> wednesday constr
+R2350:2358 VFA.AVLTrees <> wednesday constr
+R2363:2370 VFA.AVLTrees <> thursday constr
+R2376:2383 VFA.AVLTrees <> thursday constr
+R2389:2394 VFA.AVLTrees <> friday constr
+R2400:2405 VFA.AVLTrees <> friday constr
+R2413:2418 VFA.AVLTrees <> monday constr
+R2424:2431 VFA.AVLTrees <> saturday constr
+R2437:2442 VFA.AVLTrees <> monday constr
+R2448:2453 VFA.AVLTrees <> sunday constr
+R2461:2466 VFA.AVLTrees <> monday constr
+R3108:3119 VFA.AVLTrees <> next_weekday def
+R3121:3126 VFA.AVLTrees <> friday constr
+R3163:3174 VFA.AVLTrees <> next_weekday def
+R3177:3188 VFA.AVLTrees <> next_weekday def
+R3190:3197 VFA.AVLTrees <> saturday constr
+def 3710:3726 <> test_next_weekday
+R3731:3731 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3768:3771 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3732:3743 VFA.AVLTrees <> next_weekday def
+R3746:3757 VFA.AVLTrees <> next_weekday def
+R3759:3766 VFA.AVLTrees <> saturday constr
+R3772:3778 VFA.AVLTrees <> tuesday constr
+R8190:8195 Coq.Strings.String <> <> lib
+ind 8416:8419 <> bool
+constr 8435:8438 <> true
+constr 8444:8448 <> false
+def 8540:8543 <> negb
+R8548:8551 VFA.AVLTrees <> bool ind
+binder 8546:8546 <> b:7
+R8556:8559 VFA.AVLTrees <> bool ind
+R8572:8572 VFA.AVLTrees <> b:7 var
+R8583:8586 VFA.AVLTrees <> true constr
+R8591:8595 VFA.AVLTrees <> false constr
+R8601:8605 VFA.AVLTrees <> false constr
+R8610:8613 VFA.AVLTrees <> true constr
+def 8634:8637 <> andb
+R8643:8646 VFA.AVLTrees <> bool ind
+binder 8640:8641 <> b1:9
+R8653:8656 VFA.AVLTrees <> bool ind
+binder 8650:8651 <> b2:10
+R8661:8664 VFA.AVLTrees <> bool ind
+R8677:8678 VFA.AVLTrees <> b1:9 var
+R8689:8692 VFA.AVLTrees <> true constr
+R8697:8698 VFA.AVLTrees <> b2:10 var
+R8704:8708 VFA.AVLTrees <> false constr
+R8713:8717 VFA.AVLTrees <> false constr
+def 8738:8740 <> orb
+R8746:8749 VFA.AVLTrees <> bool ind
+binder 8743:8744 <> b1:12
+R8756:8759 VFA.AVLTrees <> bool ind
+binder 8753:8754 <> b2:13
+R8764:8767 VFA.AVLTrees <> bool ind
+R8780:8781 VFA.AVLTrees <> b1:12 var
+R8792:8795 VFA.AVLTrees <> true constr
+R8800:8803 VFA.AVLTrees <> true constr
+R8809:8813 VFA.AVLTrees <> false constr
+R8818:8819 VFA.AVLTrees <> b2:13 var
+def 9524:9532 <> test_orb1
+R9536:9536 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9552:9555 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9537:9539 VFA.AVLTrees <> orb def
+R9541:9544 VFA.AVLTrees <> true constr
+R9547:9551 VFA.AVLTrees <> false constr
+R9556:9559 VFA.AVLTrees <> true constr
+def 9603:9611 <> test_orb2
+R9615:9615 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9631:9634 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9616:9618 VFA.AVLTrees <> orb def
+R9620:9624 VFA.AVLTrees <> false constr
+R9626:9630 VFA.AVLTrees <> false constr
+R9635:9639 VFA.AVLTrees <> false constr
+def 9683:9691 <> test_orb3
+R9695:9695 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9710:9714 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9696:9698 VFA.AVLTrees <> orb def
+R9700:9704 VFA.AVLTrees <> false constr
+R9706:9709 VFA.AVLTrees <> true constr
+R9715:9718 VFA.AVLTrees <> true constr
+def 9762:9770 <> test_orb4
+R9774:9774 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9789:9793 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9775:9777 VFA.AVLTrees <> orb def
+R9779:9782 VFA.AVLTrees <> true constr
+R9785:9788 VFA.AVLTrees <> true constr
+R9794:9797 VFA.AVLTrees <> true constr
+R10053:10056 VFA.AVLTrees <> andb def
+not 10040:10040 <> :::x_'&&'_x
+R10086:10088 VFA.AVLTrees <> orb def
+not 10073:10073 <> :::x_'||'_x
+def 10105:10113 <> test_orb5
+R10139:10141 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10131:10134 VFA.AVLTrees <> :::x_'||'_x not
+R10122:10125 VFA.AVLTrees <> :::x_'||'_x not
+R10117:10121 VFA.AVLTrees <> false constr
+R10126:10130 VFA.AVLTrees <> false constr
+R10135:10138 VFA.AVLTrees <> true constr
+R10142:10145 VFA.AVLTrees <> true constr
+def 11174:11178 <> nandb
+R11184:11187 VFA.AVLTrees <> bool ind
+binder 11181:11182 <> b1:15
+R11194:11197 VFA.AVLTrees <> bool ind
+binder 11191:11192 <> b2:16
+R11202:11205 VFA.AVLTrees <> bool ind
+R11218:11219 VFA.AVLTrees <> b1:15 var
+R11230:11234 VFA.AVLTrees <> false constr
+R11239:11242 VFA.AVLTrees <> true constr
+R11248:11251 VFA.AVLTrees <> true constr
+R11257:11260 VFA.AVLTrees <> negb def
+R11262:11263 VFA.AVLTrees <> b2:16 var
+def 11282:11292 <> test_nandb1
+R11309:11309 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11326:11329 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11310:11314 VFA.AVLTrees <> nandb def
+R11316:11319 VFA.AVLTrees <> true constr
+R11321:11325 VFA.AVLTrees <> false constr
+R11330:11333 VFA.AVLTrees <> true constr
+def 11376:11386 <> test_nandb2
+R11403:11403 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11421:11424 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11404:11408 VFA.AVLTrees <> nandb def
+R11410:11414 VFA.AVLTrees <> false constr
+R11416:11420 VFA.AVLTrees <> false constr
+R11425:11428 VFA.AVLTrees <> true constr
+def 11471:11481 <> test_nandb3
+R11498:11498 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11515:11518 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11499:11503 VFA.AVLTrees <> nandb def
+R11505:11509 VFA.AVLTrees <> false constr
+R11511:11514 VFA.AVLTrees <> true constr
+R11519:11522 VFA.AVLTrees <> true constr
+def 11565:11575 <> test_nandb4
+R11592:11592 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11608:11611 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11593:11597 VFA.AVLTrees <> nandb def
+R11599:11602 VFA.AVLTrees <> true constr
+R11604:11607 VFA.AVLTrees <> true constr
+R11612:11616 VFA.AVLTrees <> false constr
+def 11872:11876 <> andb3
+R11882:11885 VFA.AVLTrees <> bool ind
+binder 11879:11880 <> b1:18
+R11892:11895 VFA.AVLTrees <> bool ind
+binder 11889:11890 <> b2:19
+R11902:11905 VFA.AVLTrees <> bool ind
+binder 11899:11900 <> b3:20
+R11910:11913 VFA.AVLTrees <> bool ind
+R11934:11935 VFA.AVLTrees <> b3:20 var
+R11930:11931 VFA.AVLTrees <> b2:19 var
+R11926:11927 VFA.AVLTrees <> b1:18 var
+R11946:11949 VFA.AVLTrees <> true constr
+R11952:11955 VFA.AVLTrees <> true constr
+R11958:11961 VFA.AVLTrees <> true constr
+R11966:11969 VFA.AVLTrees <> true constr
+R11986:11990 VFA.AVLTrees <> false constr
+def 12008:12018 <> test_andb31
+R12037:12037 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12058:12061 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12038:12042 VFA.AVLTrees <> andb3 def
+R12044:12047 VFA.AVLTrees <> true constr
+R12049:12052 VFA.AVLTrees <> true constr
+R12054:12057 VFA.AVLTrees <> true constr
+R12062:12065 VFA.AVLTrees <> true constr
+def 12108:12118 <> test_andb32
+R12137:12137 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12159:12162 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12138:12142 VFA.AVLTrees <> andb3 def
+R12144:12148 VFA.AVLTrees <> false constr
+R12150:12153 VFA.AVLTrees <> true constr
+R12155:12158 VFA.AVLTrees <> true constr
+R12163:12167 VFA.AVLTrees <> false constr
+def 12210:12220 <> test_andb33
+R12239:12239 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12261:12264 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12240:12244 VFA.AVLTrees <> andb3 def
+R12246:12249 VFA.AVLTrees <> true constr
+R12251:12255 VFA.AVLTrees <> false constr
+R12257:12260 VFA.AVLTrees <> true constr
+R12265:12269 VFA.AVLTrees <> false constr
+def 12312:12322 <> test_andb34
+R12341:12341 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12363:12366 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12342:12346 VFA.AVLTrees <> andb3 def
+R12348:12351 VFA.AVLTrees <> true constr
+R12353:12356 VFA.AVLTrees <> true constr
+R12358:12362 VFA.AVLTrees <> false constr
+R12367:12371 VFA.AVLTrees <> false constr
+R12672:12675 VFA.AVLTrees <> true constr
+R12904:12907 VFA.AVLTrees <> bool ind
+R12893:12896 VFA.AVLTrees <> true constr
+R12934:12937 VFA.AVLTrees <> bool ind
+R12917:12920 VFA.AVLTrees <> negb def
+R12922:12925 VFA.AVLTrees <> true constr
+R13135:13138 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13131:13134 VFA.AVLTrees <> bool ind
+R13139:13142 VFA.AVLTrees <> bool ind
+R13120:13123 VFA.AVLTrees <> negb def
+ind 13899:13901 <> rgb
+constr 13917:13919 <> red
+constr 13925:13929 <> green
+constr 13935:13938 <> blue
+ind 13952:13956 <> color
+constr 13972:13976 <> black
+constr 13982:13986 <> white
+constr 13992:13998 <> primary
+R14005:14007 VFA.AVLTrees <> rgb ind
+binder 14001:14001 <> p:28
+def 15574:15583 <> monochrome
+R15590:15594 VFA.AVLTrees <> color ind
+binder 15586:15586 <> c:29
+R15599:15602 VFA.AVLTrees <> bool ind
+R15615:15615 VFA.AVLTrees <> c:29 var
+R15626:15630 VFA.AVLTrees <> black constr
+R15635:15638 VFA.AVLTrees <> true constr
+R15644:15648 VFA.AVLTrees <> white constr
+R15653:15656 VFA.AVLTrees <> true constr
+R15662:15668 VFA.AVLTrees <> primary constr
+R15675:15679 VFA.AVLTrees <> false constr
+def 15933:15937 <> isred
+R15944:15948 VFA.AVLTrees <> color ind
+binder 15940:15940 <> c:31
+R15953:15956 VFA.AVLTrees <> bool ind
+R15969:15969 VFA.AVLTrees <> c:31 var
+R15980:15984 VFA.AVLTrees <> black constr
+R15989:15993 VFA.AVLTrees <> false constr
+R15999:16003 VFA.AVLTrees <> white constr
+R16008:16012 VFA.AVLTrees <> false constr
+R16018:16024 VFA.AVLTrees <> primary constr
+R16026:16028 VFA.AVLTrees <> red constr
+R16033:16036 VFA.AVLTrees <> true constr
+R16042:16048 VFA.AVLTrees <> primary constr
+R16055:16059 VFA.AVLTrees <> false constr
+mod 16902:16911 <> Playground
+def 16927:16927 Playground b
+R16931:16933 VFA.AVLTrees <> rgb ind
+R16938:16941 VFA.AVLTrees <> blue constr
+R16948:16957 VFA.AVLTrees Playground <> mod
+def 16972:16972 <> b
+R16976:16979 VFA.AVLTrees <> bool ind
+R16984:16987 VFA.AVLTrees <> true constr
+R17012:17014 VFA.AVLTrees <> rgb ind
+R16997:17008 VFA.AVLTrees <> b def
+R17027:17030 VFA.AVLTrees <> bool ind
+R17023:17023 VFA.AVLTrees <> b def
+mod 17131:17145 <> TuplePlayground
+ind 17559:17561 TuplePlayground bit
+constr 17577:17578 TuplePlayground B0
+constr 17584:17585 TuplePlayground B1
+ind 17599:17604 TuplePlayground nybble
+constr 17620:17623 TuplePlayground bits
+R17640:17642 VFA.AVLTrees TuplePlayground bit ind
+binder 17626:17627 <> b0:37
+binder 17629:17630 <> b1:38
+binder 17632:17633 <> b2:39
+binder 17635:17636 <> b3:40
+R17678:17683 VFA.AVLTrees TuplePlayground nybble ind
+R17654:17657 VFA.AVLTrees TuplePlayground bits constr
+R17659:17660 VFA.AVLTrees TuplePlayground B1 constr
+R17662:17663 VFA.AVLTrees TuplePlayground B0 constr
+R17665:17666 VFA.AVLTrees TuplePlayground B1 constr
+R17668:17669 VFA.AVLTrees TuplePlayground B0 constr
+def 18013:18020 TuplePlayground all_zero
+R18028:18033 VFA.AVLTrees TuplePlayground nybble ind
+binder 18023:18024 <> nb:41
+R18038:18041 VFA.AVLTrees <> bool ind
+R18054:18055 VFA.AVLTrees <> nb:41 var
+R18069:18072 VFA.AVLTrees TuplePlayground bits constr
+R18074:18075 VFA.AVLTrees TuplePlayground B0 constr
+R18077:18078 VFA.AVLTrees TuplePlayground B0 constr
+R18080:18081 VFA.AVLTrees TuplePlayground B0 constr
+R18083:18084 VFA.AVLTrees TuplePlayground B0 constr
+R18090:18093 VFA.AVLTrees <> true constr
+R18102:18105 VFA.AVLTrees TuplePlayground bits constr
+R18119:18123 VFA.AVLTrees <> false constr
+R18142:18149 VFA.AVLTrees TuplePlayground all_zero def
+R18152:18155 VFA.AVLTrees TuplePlayground bits constr
+R18157:18158 VFA.AVLTrees TuplePlayground B1 constr
+R18160:18161 VFA.AVLTrees TuplePlayground B0 constr
+R18163:18164 VFA.AVLTrees TuplePlayground B1 constr
+R18166:18167 VFA.AVLTrees TuplePlayground B0 constr
+R18205:18212 VFA.AVLTrees TuplePlayground all_zero def
+R18215:18218 VFA.AVLTrees TuplePlayground bits constr
+R18220:18221 VFA.AVLTrees TuplePlayground B0 constr
+R18223:18224 VFA.AVLTrees TuplePlayground B0 constr
+R18226:18227 VFA.AVLTrees TuplePlayground B0 constr
+R18229:18230 VFA.AVLTrees TuplePlayground B0 constr
+R18263:18277 VFA.AVLTrees TuplePlayground <> mod
+mod 18604:18616 <> NatPlayground
+ind 20421:20423 NatPlayground nat
+constr 20439:20439 NatPlayground O
+constr 20445:20445 NatPlayground S
+R20452:20454 VFA.AVLTrees <> nat:43 ind
+binder 20448:20448 <> n:45
+ind 22241:22244 NatPlayground nat'
+constr 22260:22263 NatPlayground stop
+constr 22269:22272 NatPlayground tick
+R22281:22284 VFA.AVLTrees <> nat':46 ind
+binder 22275:22277 <> foo:48
+def 22594:22597 NatPlayground pred
+R22604:22606 VFA.AVLTrees NatPlayground nat ind
+binder 22600:22600 <> n:49
+R22611:22613 VFA.AVLTrees NatPlayground nat ind
+R22626:22626 VFA.AVLTrees <> n:49 var
+R22639:22639 VFA.AVLTrees NatPlayground O constr
+R22644:22644 VFA.AVLTrees NatPlayground O constr
+R22652:22652 VFA.AVLTrees NatPlayground S constr
+R23034:23046 VFA.AVLTrees NatPlayground <> mod
+R23382:23382 Coq.Init.Datatypes <> S constr
+R23385:23385 Coq.Init.Datatypes <> S constr
+R23388:23388 Coq.Init.Datatypes <> S constr
+R23391:23391 Coq.Init.Datatypes <> S constr
+R23393:23393 Coq.Init.Datatypes <> O constr
+def 23431:23438 <> minustwo
+R23445:23447 Coq.Init.Datatypes <> nat ind
+binder 23441:23441 <> n:51
+R23452:23454 Coq.Init.Datatypes <> nat ind
+R23467:23467 VFA.AVLTrees <> n:51 var
+R23480:23480 Coq.Init.Datatypes <> O constr
+R23485:23485 Coq.Init.Datatypes <> O constr
+R23493:23493 Coq.Init.Datatypes <> S constr
+R23495:23495 Coq.Init.Datatypes <> O constr
+R23500:23500 Coq.Init.Datatypes <> O constr
+R23508:23508 Coq.Init.Datatypes <> S constr
+R23511:23511 Coq.Init.Datatypes <> S constr
+R23540:23547 VFA.AVLTrees <> minustwo def
+R23703:23704 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23700:23702 Coq.Init.Datatypes <> nat ind
+R23705:23707 Coq.Init.Datatypes <> nat ind
+R23689:23689 Coq.Init.Datatypes <> S constr
+R23730:23731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23727:23729 Coq.Init.Datatypes <> nat ind
+R23732:23734 Coq.Init.Datatypes <> nat ind
+R23716:23719 Coq.Init.Peano <> pred syndef
+R23757:23758 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R23754:23756 Coq.Init.Datatypes <> nat ind
+R23759:23761 Coq.Init.Datatypes <> nat ind
+R23743:23750 VFA.AVLTrees <> minustwo def
+def 25002:25006 <> evenb
+R25011:25013 Coq.Init.Datatypes <> nat ind
+binder 25009:25009 <> n:53
+R25018:25021 VFA.AVLTrees <> bool ind
+R25034:25034 VFA.AVLTrees <> n:53 var
+R25045:25045 Coq.Init.Datatypes <> O constr
+R25057:25060 VFA.AVLTrees <> true constr
+R25066:25066 Coq.Init.Datatypes <> S constr
+R25068:25068 Coq.Init.Datatypes <> O constr
+R25078:25082 VFA.AVLTrees <> false constr
+R25088:25088 Coq.Init.Datatypes <> S constr
+R25091:25091 Coq.Init.Datatypes <> S constr
+R25100:25104 VFA.AVLTrees <> evenb:54 def
+def 25227:25230 <> oddb
+R25235:25237 Coq.Init.Datatypes <> nat ind
+binder 25233:25233 <> n:56
+R25242:25245 VFA.AVLTrees <> bool ind
+R25252:25255 VFA.AVLTrees <> negb def
+R25258:25262 VFA.AVLTrees <> evenb def
+R25264:25264 VFA.AVLTrees <> n:56 var
+def 25277:25286 <> test_oddb1
+R25298:25300 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25292:25295 VFA.AVLTrees <> oddb def
+R25301:25304 VFA.AVLTrees <> true constr
+def 25348:25357 <> test_oddb2
+R25369:25371 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R25363:25366 VFA.AVLTrees <> oddb def
+R25372:25376 VFA.AVLTrees <> false constr
+mod 25694:25707 <> NatPlayground2
+def 25720:25723 NatPlayground2 plus
+R25730:25732 Coq.Init.Datatypes <> nat ind
+binder 25726:25726 <> n:57
+R25740:25742 Coq.Init.Datatypes <> nat ind
+binder 25736:25736 <> m:58
+R25747:25749 Coq.Init.Datatypes <> nat ind
+R25762:25762 VFA.AVLTrees <> n:57 var
+R25775:25775 Coq.Init.Datatypes <> O constr
+R25780:25780 VFA.AVLTrees <> m:58 var
+R25788:25788 Coq.Init.Datatypes <> S constr
+R25796:25796 Coq.Init.Datatypes <> S constr
+R25799:25802 VFA.AVLTrees <> plus:59 def
+R25807:25807 VFA.AVLTrees <> m:58 var
+R25890:25893 VFA.AVLTrees NatPlayground2 plus def
+def 26655:26658 NatPlayground2 mult
+R26667:26669 Coq.Init.Datatypes <> nat ind
+binder 26661:26661 <> n:61
+binder 26663:26663 <> m:62
+R26674:26676 Coq.Init.Datatypes <> nat ind
+R26689:26689 VFA.AVLTrees <> n:61 var
+R26702:26702 Coq.Init.Datatypes <> O constr
+R26707:26707 Coq.Init.Datatypes <> O constr
+R26715:26715 Coq.Init.Datatypes <> S constr
+R26723:26726 VFA.AVLTrees NatPlayground2 plus def
+R26728:26728 VFA.AVLTrees <> m:62 var
+R26731:26734 VFA.AVLTrees <> mult:63 def
+R26739:26739 VFA.AVLTrees <> m:62 var
+def 26758:26767 NatPlayground2 test_mult1
+R26770:26770 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26779:26782 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R26771:26774 VFA.AVLTrees NatPlayground2 mult def
+def 26912:26916 NatPlayground2 minus
+R26923:26925 Coq.Init.Datatypes <> nat ind
+binder 26919:26919 <> n:65
+binder 26921:26921 <> m:66
+R26930:26932 Coq.Init.Datatypes <> nat ind
+R26948:26948 VFA.AVLTrees <> m:66 var
+R26945:26945 VFA.AVLTrees <> n:65 var
+R26959:26959 Coq.Init.Datatypes <> O constr
+R26973:26973 Coq.Init.Datatypes <> O constr
+R26979:26979 Coq.Init.Datatypes <> S constr
+R26985:26985 Coq.Init.Datatypes <> O constr
+R26993:26993 VFA.AVLTrees <> n:65 var
+R26999:26999 Coq.Init.Datatypes <> S constr
+R27005:27005 Coq.Init.Datatypes <> S constr
+R27013:27017 VFA.AVLTrees <> minus:67 def
+R27037:27050 VFA.AVLTrees NatPlayground2 <> mod
+def 27063:27065 <> exp
+R27081:27083 Coq.Init.Datatypes <> nat ind
+binder 27068:27071 <> base:70
+binder 27073:27077 <> power:71
+R27088:27090 Coq.Init.Datatypes <> nat ind
+R27103:27107 VFA.AVLTrees <> power:71 var
+R27120:27120 Coq.Init.Datatypes <> O constr
+R27125:27125 Coq.Init.Datatypes <> S constr
+R27127:27127 Coq.Init.Datatypes <> O constr
+R27135:27135 Coq.Init.Datatypes <> S constr
+R27142:27145 Coq.Init.Peano <> mult syndef
+R27147:27150 VFA.AVLTrees <> base:70 var
+R27153:27155 VFA.AVLTrees <> exp:72 def
+R27157:27160 VFA.AVLTrees <> base:70 var
+def 27406:27414 <> factorial
+R27419:27421 Coq.Init.Datatypes <> nat ind
+binder 27417:27417 <> n:74
+R27426:27428 Coq.Init.Datatypes <> nat ind
+R27441:27441 VFA.AVLTrees <> n:74 var
+R27452:27452 Coq.Init.Datatypes <> O constr
+R27463:27463 Coq.Init.Datatypes <> S constr
+R27472:27474 Coq.Init.Peano <> ::nat_scope:x_'*'_x not
+R27471:27471 VFA.AVLTrees <> n:74 var
+R27475:27483 VFA.AVLTrees <> factorial:75 def
+def 27504:27518 <> test_factorial1
+R27530:27530 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27542:27545 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27531:27539 VFA.AVLTrees <> factorial def
+def 27589:27603 <> test_factorial2
+R27615:27615 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27627:27631 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27642:27642 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R27616:27624 VFA.AVLTrees <> factorial def
+R27632:27635 Coq.Init.Peano <> mult syndef
+R27863:27866 Coq.Init.Peano <> plus syndef
+not 27851:27851 <> ::nat_scope:x_'+'_x
+R27987:27991 Coq.Init.Peano <> minus syndef
+not 27975:27975 <> ::nat_scope:x_'-'_x
+R28112:28115 Coq.Init.Peano <> mult syndef
+not 28100:28100 <> ::nat_scope:x_'*'_x
+R28238:28240 Coq.Init.Datatypes <> nat ind
+R28223:28223 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R28229:28232 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R28225:28227 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+def 29154:29156 <> eqb
+R29165:29167 Coq.Init.Datatypes <> nat ind
+binder 29159:29159 <> n:77
+binder 29161:29161 <> m:78
+R29172:29175 VFA.AVLTrees <> bool ind
+R29188:29188 VFA.AVLTrees <> n:77 var
+R29199:29199 Coq.Init.Datatypes <> O constr
+R29210:29210 VFA.AVLTrees <> m:78 var
+R29228:29228 Coq.Init.Datatypes <> O constr
+R29233:29236 VFA.AVLTrees <> true constr
+R29249:29249 Coq.Init.Datatypes <> S constr
+R29257:29261 VFA.AVLTrees <> false constr
+R29280:29280 Coq.Init.Datatypes <> S constr
+R29294:29294 VFA.AVLTrees <> m:78 var
+R29315:29315 Coq.Init.Datatypes <> O constr
+R29320:29324 VFA.AVLTrees <> false constr
+R29340:29340 Coq.Init.Datatypes <> S constr
+R29348:29350 VFA.AVLTrees <> eqb:79 def
+def 29532:29534 <> leb
+R29543:29545 Coq.Init.Datatypes <> nat ind
+binder 29537:29537 <> n:83
+binder 29539:29539 <> m:84
+R29550:29553 VFA.AVLTrees <> bool ind
+R29566:29566 VFA.AVLTrees <> n:83 var
+R29577:29577 Coq.Init.Datatypes <> O constr
+R29582:29585 VFA.AVLTrees <> true constr
+R29591:29591 Coq.Init.Datatypes <> S constr
+R29611:29611 VFA.AVLTrees <> m:84 var
+R29626:29626 Coq.Init.Datatypes <> O constr
+R29631:29635 VFA.AVLTrees <> false constr
+R29645:29645 Coq.Init.Datatypes <> S constr
+R29653:29655 VFA.AVLTrees <> leb:85 def
+def 29689:29697 <> test_leb1
+R29722:29724 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R29715:29717 VFA.AVLTrees <> leb def
+R29725:29728 VFA.AVLTrees <> true constr
+def 29772:29780 <> test_leb2
+R29805:29807 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R29798:29800 VFA.AVLTrees <> leb def
+R29808:29811 VFA.AVLTrees <> true constr
+def 29855:29863 <> test_leb3
+R29888:29890 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R29881:29883 VFA.AVLTrees <> leb def
+R29891:29895 VFA.AVLTrees <> false constr
+R30049:30051 VFA.AVLTrees <> eqb def
+not 30036:30036 <> ::nat_scope:x_'=?'_x
+R30108:30110 VFA.AVLTrees <> leb def
+not 30094:30094 <> ::nat_scope:x_'<=?'_x
+def 30153:30162 <> test_leb3'
+R30165:30165 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30173:30176 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R30167:30171 VFA.AVLTrees <> ::nat_scope:x_'<=?'_x not
+R30177:30181 VFA.AVLTrees <> false constr
+def 30966:30968 <> ltb
+R30977:30979 Coq.Init.Datatypes <> nat ind
+binder 30971:30971 <> n:88
+binder 30973:30973 <> m:89
+R30984:30987 VFA.AVLTrees <> bool ind
+R30994:30994 VFA.AVLTrees <> :::x_'&&'_x not
+R31002:31006 VFA.AVLTrees <> :::x_'&&'_x not
+R30995:30997 VFA.AVLTrees <> leb def
+R30999:30999 VFA.AVLTrees <> n:88 var
+R31001:31001 VFA.AVLTrees <> m:89 var
+R31007:31010 VFA.AVLTrees <> negb def
+R31012:31014 VFA.AVLTrees <> eqb def
+R31016:31016 VFA.AVLTrees <> n:88 var
+R31018:31018 VFA.AVLTrees <> m:89 var
+R31045:31047 VFA.AVLTrees <> ltb def
+not 31032:31032 <> ::nat_scope:x_'<?'_x
+def 31090:31098 <> test_ltb1
+R31113:31113 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31121:31124 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31114:31116 VFA.AVLTrees <> ltb def
+R31125:31129 VFA.AVLTrees <> false constr
+def 31172:31180 <> test_ltb2
+R31195:31195 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31203:31206 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31196:31198 VFA.AVLTrees <> ltb def
+R31207:31210 VFA.AVLTrees <> true constr
+def 31253:31261 <> test_ltb3
+R31276:31276 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31284:31287 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R31277:31279 VFA.AVLTrees <> ltb def
+R31288:31292 VFA.AVLTrees <> false constr
+prf 32296:32303 <> plus_O_n
+R32318:32320 Coq.Init.Datatypes <> nat ind
+binder 32314:32314 <> n:90
+R32328:32330 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R32324:32326 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R32327:32327 VFA.AVLTrees <> n:90 var
+R32331:32331 VFA.AVLTrees <> n:90 var
+prf 33242:33250 <> plus_O_n'
+R33265:33267 Coq.Init.Datatypes <> nat ind
+binder 33261:33261 <> n:91
+R33275:33277 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R33271:33273 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R33274:33274 VFA.AVLTrees <> n:91 var
+R33278:33278 VFA.AVLTrees <> n:91 var
+prf 34985:34994 <> plus_O_n''
+R35009:35011 Coq.Init.Datatypes <> nat ind
+binder 35005:35005 <> n:92
+R35019:35021 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R35015:35017 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R35018:35018 VFA.AVLTrees <> n:92 var
+R35022:35022 VFA.AVLTrees <> n:92 var
+prf 35456:35463 <> plus_1_l
+R35476:35478 Coq.Init.Datatypes <> nat ind
+binder 35474:35474 <> n:93
+R35486:35488 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R35482:35484 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R35485:35485 VFA.AVLTrees <> n:93 var
+R35489:35489 Coq.Init.Datatypes <> S constr
+R35491:35491 VFA.AVLTrees <> n:93 var
+prf 35548:35555 <> mult_0_l
+R35568:35570 Coq.Init.Datatypes <> nat ind
+binder 35566:35566 <> n:94
+R35578:35580 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R35574:35576 VFA.AVLTrees <> ::nat_scope:x_'*'_x not
+R35577:35577 VFA.AVLTrees <> n:94 var
+prf 36170:36184 <> plus_id_example
+R36199:36201 Coq.Init.Datatypes <> nat ind
+binder 36195:36195 <> n:95
+binder 36197:36197 <> m:96
+R36211:36216 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R36207:36209 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R36206:36206 VFA.AVLTrees <> n:95 var
+R36210:36210 VFA.AVLTrees <> m:96 var
+R36222:36224 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R36218:36220 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R36217:36217 VFA.AVLTrees <> n:95 var
+R36221:36221 VFA.AVLTrees <> n:95 var
+R36226:36228 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R36225:36225 VFA.AVLTrees <> m:96 var
+R36229:36229 VFA.AVLTrees <> m:96 var
+prf 38055:38070 <> plus_id_exercise
+R38089:38091 Coq.Init.Datatypes <> nat ind
+binder 38081:38081 <> n:97
+binder 38083:38083 <> m:98
+binder 38085:38085 <> o:99
+R38101:38104 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R38097:38099 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R38096:38096 VFA.AVLTrees <> n:97 var
+R38100:38100 VFA.AVLTrees <> m:98 var
+R38110:38113 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R38106:38108 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R38105:38105 VFA.AVLTrees <> m:98 var
+R38109:38109 VFA.AVLTrees <> o:99 var
+R38119:38121 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R38115:38117 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R38114:38114 VFA.AVLTrees <> n:97 var
+R38118:38118 VFA.AVLTrees <> m:98 var
+R38123:38125 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R38122:38122 VFA.AVLTrees <> m:98 var
+R38126:38126 VFA.AVLTrees <> o:99 var
+R39178:39185 Coq.Init.Peano <> mult_n_O thm
+R39232:39240 Coq.Init.Peano <> mult_n_Sm thm
+prf 39603:39614 <> mult_n_0_m_0
+R39631:39633 Coq.Init.Datatypes <> nat ind
+binder 39625:39625 <> p:100
+binder 39627:39627 <> q:101
+R39655:39657 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R39638:39638 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R39644:39648 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R39654:39654 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R39640:39642 VFA.AVLTrees <> ::nat_scope:x_'*'_x not
+R39639:39639 VFA.AVLTrees <> p:100 var
+R39650:39652 VFA.AVLTrees <> ::nat_scope:x_'*'_x not
+R39649:39649 VFA.AVLTrees <> q:101 var
+R39695:39702 Coq.Init.Peano <> mult_n_O thm
+R39695:39702 Coq.Init.Peano <> mult_n_O thm
+R39695:39702 Coq.Init.Peano <> mult_n_O thm
+R39718:39725 Coq.Init.Peano <> mult_n_O thm
+R39718:39725 Coq.Init.Peano <> mult_n_O thm
+R39718:39725 Coq.Init.Peano <> mult_n_O thm
+prf 39946:39953 <> mult_n_1
+R39968:39970 Coq.Init.Datatypes <> nat ind
+binder 39964:39964 <> p:102
+R39980:39982 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R39976:39978 VFA.AVLTrees <> ::nat_scope:x_'*'_x not
+R39975:39975 VFA.AVLTrees <> p:102 var
+R39983:39983 VFA.AVLTrees <> p:102 var
+R40018:40026 Coq.Init.Peano <> mult_n_Sm thm
+R40018:40026 Coq.Init.Peano <> mult_n_Sm thm
+R40018:40026 Coq.Init.Peano <> mult_n_Sm thm
+R40042:40049 Coq.Init.Peano <> mult_n_O thm
+R40042:40049 Coq.Init.Peano <> mult_n_O thm
+R40042:40049 Coq.Init.Peano <> mult_n_O thm
+prf 40580:40600 <> plus_1_neq_0_firsttry
+R40615:40617 Coq.Init.Datatypes <> nat ind
+binder 40611:40611 <> n:103
+R40634:40636 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R40622:40622 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R40628:40632 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R40624:40626 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R40623:40623 VFA.AVLTrees <> n:103 var
+R40637:40641 VFA.AVLTrees <> false constr
+prf 41593:41604 <> plus_1_neq_0
+R41619:41621 Coq.Init.Datatypes <> nat ind
+binder 41615:41615 <> n:104
+R41638:41640 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R41626:41626 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R41632:41636 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R41628:41630 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R41627:41627 VFA.AVLTrees <> n:104 var
+R41641:41645 VFA.AVLTrees <> false constr
+prf 45100:45114 <> negb_involutive
+R45129:45132 VFA.AVLTrees <> bool ind
+binder 45125:45125 <> b:105
+R45150:45152 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R45137:45140 VFA.AVLTrees <> negb def
+R45143:45146 VFA.AVLTrees <> negb def
+R45148:45148 VFA.AVLTrees <> b:105 var
+R45153:45153 VFA.AVLTrees <> b:105 var
+prf 45887:45902 <> andb_commutative
+binder 45913:45913 <> b:106
+binder 45915:45915 <> c:107
+R45926:45928 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R45918:45921 VFA.AVLTrees <> andb def
+R45923:45923 VFA.AVLTrees <> b:106 var
+R45925:45925 VFA.AVLTrees <> c:107 var
+R45929:45932 VFA.AVLTrees <> andb def
+R45934:45934 VFA.AVLTrees <> c:107 var
+R45936:45936 VFA.AVLTrees <> b:106 var
+prf 46459:46475 <> andb_commutative'
+binder 46486:46486 <> b:108
+binder 46488:46488 <> c:109
+R46499:46501 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R46491:46494 VFA.AVLTrees <> andb def
+R46496:46496 VFA.AVLTrees <> b:108 var
+R46498:46498 VFA.AVLTrees <> c:109 var
+R46502:46505 VFA.AVLTrees <> andb def
+R46507:46507 VFA.AVLTrees <> c:109 var
+R46509:46509 VFA.AVLTrees <> b:108 var
+prf 47050:47063 <> andb3_exchange
+binder 47076:47076 <> b:110
+binder 47078:47078 <> c:111
+binder 47080:47080 <> d:112
+R47100:47102 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R47083:47086 VFA.AVLTrees <> andb def
+R47089:47092 VFA.AVLTrees <> andb def
+R47094:47094 VFA.AVLTrees <> b:110 var
+R47096:47096 VFA.AVLTrees <> c:111 var
+R47099:47099 VFA.AVLTrees <> d:112 var
+R47103:47106 VFA.AVLTrees <> andb def
+R47109:47112 VFA.AVLTrees <> andb def
+R47114:47114 VFA.AVLTrees <> b:110 var
+R47116:47116 VFA.AVLTrees <> d:112 var
+R47119:47119 VFA.AVLTrees <> c:111 var
+prf 47758:47772 <> andb_true_elim2
+R47789:47792 VFA.AVLTrees <> bool ind
+binder 47783:47783 <> b:113
+binder 47785:47785 <> c:114
+R47812:47815 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R47805:47807 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R47797:47800 VFA.AVLTrees <> andb def
+R47802:47802 VFA.AVLTrees <> b:113 var
+R47804:47804 VFA.AVLTrees <> c:114 var
+R47808:47811 VFA.AVLTrees <> true constr
+R47817:47819 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R47816:47816 VFA.AVLTrees <> c:114 var
+R47820:47823 VFA.AVLTrees <> true constr
+prf 48779:48791 <> plus_1_neq_0'
+R48806:48808 Coq.Init.Datatypes <> nat ind
+binder 48802:48802 <> n:115
+R48825:48827 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R48813:48813 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R48819:48823 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R48815:48817 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R48814:48814 VFA.AVLTrees <> n:115 var
+R48828:48832 VFA.AVLTrees <> false constr
+prf 49022:49039 <> andb_commutative''
+binder 49052:49052 <> b:116
+binder 49054:49054 <> c:117
+R49065:49067 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R49057:49060 VFA.AVLTrees <> andb def
+R49062:49062 VFA.AVLTrees <> b:116 var
+R49064:49064 VFA.AVLTrees <> c:117 var
+R49068:49071 VFA.AVLTrees <> andb def
+R49073:49073 VFA.AVLTrees <> c:117 var
+R49075:49075 VFA.AVLTrees <> b:116 var
+prf 49242:49257 <> zero_nbeq_plus_1
+R49272:49274 Coq.Init.Datatypes <> nat ind
+binder 49268:49268 <> n:118
+R49291:49293 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R49280:49284 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R49290:49290 VFA.AVLTrees <> ::nat_scope:x_'=?'_x not
+R49286:49288 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R49285:49285 VFA.AVLTrees <> n:118 var
+R49294:49298 VFA.AVLTrees <> false constr
+R49827:49830 Coq.Init.Peano <> plus syndef
+not 49815:49815 <> ::nat_scope:x_'+'_x
+R49951:49954 Coq.Init.Peano <> mult syndef
+not 49939:49939 <> ::nat_scope:x_'*'_x
+def 51793:51797 <> plus'
+R51804:51806 Coq.Init.Datatypes <> nat ind
+binder 51800:51800 <> n:119
+R51814:51816 Coq.Init.Datatypes <> nat ind
+binder 51810:51810 <> m:120
+R51821:51823 Coq.Init.Datatypes <> nat ind
+R51836:51836 VFA.AVLTrees <> n:119 var
+R51847:51847 Coq.Init.Datatypes <> O constr
+R51852:51852 VFA.AVLTrees <> m:120 var
+R51858:51858 Coq.Init.Datatypes <> S constr
+R51866:51866 Coq.Init.Datatypes <> S constr
+R51869:51873 VFA.AVLTrees <> plus':121 def
+R51878:51878 VFA.AVLTrees <> m:120 var
+prf 53455:53479 <> identity_fn_applied_twice
+R53501:53504 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R53497:53500 VFA.AVLTrees <> bool ind
+R53505:53508 VFA.AVLTrees <> bool ind
+binder 53493:53493 <> f:123
+R53514:53514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R53541:53547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R53527:53530 VFA.AVLTrees <> bool ind
+binder 53523:53523 <> x:124
+R53537:53539 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R53534:53534 VFA.AVLTrees <> f:123 var
+R53536:53536 VFA.AVLTrees <> x:124 var
+R53540:53540 VFA.AVLTrees <> x:124 var
+R53560:53563 VFA.AVLTrees <> bool ind
+binder 53556:53556 <> b:125
+R53574:53576 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R53567:53567 VFA.AVLTrees <> f:123 var
+R53570:53570 VFA.AVLTrees <> f:123 var
+R53572:53572 VFA.AVLTrees <> b:125 var
+R53577:53577 VFA.AVLTrees <> b:125 var
+def 54019:54060 <> manual_grade_for_negation_fn_applied_twice
+R54064:54069 Coq.Init.Datatypes <> option ind
+R54075:54075 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R54072:54074 Coq.Init.Datatypes <> nat ind
+R54076:54081 Coq.Strings.String <> string ind
+R54087:54090 Coq.Init.Datatypes <> None constr
+prf 54463:54473 <> andb_eq_orb
+R54493:54496 VFA.AVLTrees <> bool ind
+binder 54487:54487 <> b:126
+binder 54489:54489 <> c:127
+R54502:54502 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R54521:54527 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R54511:54513 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R54503:54506 VFA.AVLTrees <> andb def
+R54508:54508 VFA.AVLTrees <> b:126 var
+R54510:54510 VFA.AVLTrees <> c:127 var
+R54514:54516 VFA.AVLTrees <> orb def
+R54518:54518 VFA.AVLTrees <> b:126 var
+R54520:54520 VFA.AVLTrees <> c:127 var
+R54529:54531 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R54528:54528 VFA.AVLTrees <> b:126 var
+R54532:54532 VFA.AVLTrees <> c:127 var
+ind 55935:55937 <> bin
+constr 55953:55953 <> Z
+constr 55959:55960 <> B0
+constr 55976:55977 <> B1
+R55967:55969 VFA.AVLTrees <> bin:128 ind
+binder 55963:55963 <> n:130
+R55984:55986 VFA.AVLTrees <> bin:128 ind
+binder 55980:55980 <> n:131
+def 56171:56174 <> incr
+R56179:56181 VFA.AVLTrees <> bin ind
+binder 56177:56177 <> m:132
+R56186:56188 VFA.AVLTrees <> bin ind
+def 56267:56276 <> bin_to_nat
+R56281:56283 VFA.AVLTrees <> bin ind
+binder 56279:56279 <> m:134
+R56288:56290 Coq.Init.Datatypes <> nat ind
+def 56672:56685 <> test_bin_incr1
+R56689:56689 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56701:56704 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56690:56693 VFA.AVLTrees <> incr prfax
+R56696:56697 VFA.AVLTrees <> B1 constr
+R56699:56699 VFA.AVLTrees <> Z constr
+R56705:56706 VFA.AVLTrees <> B0 constr
+R56709:56710 VFA.AVLTrees <> B1 constr
+R56712:56712 VFA.AVLTrees <> Z constr
+def 56754:56767 <> test_bin_incr2
+R56771:56771 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56788:56791 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56772:56775 VFA.AVLTrees <> incr prfax
+R56778:56779 VFA.AVLTrees <> B0 constr
+R56782:56783 VFA.AVLTrees <> B1 constr
+R56785:56785 VFA.AVLTrees <> Z constr
+R56792:56793 VFA.AVLTrees <> B1 constr
+R56796:56797 VFA.AVLTrees <> B1 constr
+R56799:56799 VFA.AVLTrees <> Z constr
+def 56841:56854 <> test_bin_incr3
+R56858:56858 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56875:56878 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56859:56862 VFA.AVLTrees <> incr prfax
+R56865:56866 VFA.AVLTrees <> B1 constr
+R56869:56870 VFA.AVLTrees <> B1 constr
+R56872:56872 VFA.AVLTrees <> Z constr
+R56879:56880 VFA.AVLTrees <> B0 constr
+R56883:56884 VFA.AVLTrees <> B0 constr
+R56887:56888 VFA.AVLTrees <> B1 constr
+R56890:56890 VFA.AVLTrees <> Z constr
+def 56933:56946 <> test_bin_incr4
+R56972:56974 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R56950:56959 VFA.AVLTrees <> bin_to_nat prfax
+R56962:56963 VFA.AVLTrees <> B0 constr
+R56966:56967 VFA.AVLTrees <> B1 constr
+R56969:56969 VFA.AVLTrees <> Z constr
+def 57016:57029 <> test_bin_incr5
+R57065:57067 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R57041:57050 VFA.AVLTrees <> bin_to_nat prfax
+R57053:57056 VFA.AVLTrees <> incr prfax
+R57059:57060 VFA.AVLTrees <> B1 constr
+R57062:57062 VFA.AVLTrees <> Z constr
+R57069:57071 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R57072:57081 VFA.AVLTrees <> bin_to_nat prfax
+R57084:57085 VFA.AVLTrees <> B1 constr
+R57087:57087 VFA.AVLTrees <> Z constr
+def 57129:57142 <> test_bin_incr6
+R57185:57187 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R57154:57163 VFA.AVLTrees <> bin_to_nat prfax
+R57166:57169 VFA.AVLTrees <> incr prfax
+R57172:57175 VFA.AVLTrees <> incr prfax
+R57178:57179 VFA.AVLTrees <> B1 constr
+R57181:57181 VFA.AVLTrees <> Z constr
+R57189:57191 VFA.AVLTrees <> ::nat_scope:x_'+'_x not
+R57192:57201 VFA.AVLTrees <> bin_to_nat prfax
+R57204:57205 VFA.AVLTrees <> B1 constr
+R57207:57207 VFA.AVLTrees <> Z constr
