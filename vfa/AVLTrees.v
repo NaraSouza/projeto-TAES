@@ -23,6 +23,7 @@ Require Import Coq.ZArith.BinIntDef.
 From VFA Require Import Perm.
 
 
+
 (* ################################################################# *)
 (** * Implementation *)
 
@@ -36,6 +37,13 @@ From VFA Require Import Perm.
 Module AVL (Import I:Int).
 
 Local Notation int := I.t.
+
+Notation  "a >? b" := (I.ltb b a)
+                          (at level 70) : Int_scope.
+
+Notation  "a <? b" := (I.ltb a b)
+                          (at level 70) : Int_scope.
+
 
 Fixpoint height {V : Type} (t : tree V) : int :=
   match t with
@@ -85,7 +93,7 @@ Local Open Scope Int_scope.
 Definition balance {V : Type} (d : V) (t : tree V) : tree V :=
   match t with
   | E => t
-  | T l x v r => if I.ltb 1 (I.sub (height r) (height l)) then rotateLeft d t
+  | T l x v r => if 1 <? (I.sub (height r) (height l)) then rotateLeft d t
                 else if (height r - height l) <? -(1) then rotateRight d t
                      else t
   end.
