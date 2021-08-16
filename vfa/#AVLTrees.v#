@@ -44,12 +44,22 @@ Notation  "a >? b" := (I.ltb b a)
 Notation  "a <? b" := (I.ltb a b)
                           (at level 70) : Int_scope.
 
-
-Fixpoint height {V : Type} (t : tree V) : int :=
+Fixpoint height {V : Type} (t : tree V) : nat :=
   match t with
   | E => 0
-  | T l x v r => 1 + (max (height l) (height r))
+  | T l k v r => 1 + (Nat.max (height l) (height r))
   end.
+
+Definition abs n : nat := Nat.max n (0-n).
+
+Inductive AVL {V : Type} : tree V -> Prop :=
+| AVL_E : AVL E
+| AVL_T : forall l k v r,
+    BST (T l k v r) ->
+    abs(height l - height r) <= 1  ->
+    AVL l ->
+    AVL r ->
+    AVL (T l k v r).
 
 Definition rootKey {V : Type} (t : tree V) : key :=
   match t with
@@ -86,7 +96,6 @@ Definition rotateRight {V : Type} (d : V) (t : tree V) : tree V :=
   | E => E
   | T l x v r => T (leftTree l) (rootKey l) (rootValue d l) (T E x v E)
   end.
-
 
 Local Open Scope Int_scope.
 
