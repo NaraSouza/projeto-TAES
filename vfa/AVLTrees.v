@@ -11,8 +11,8 @@
 (* ################################################################# *)
 (** * Introduction *)
 
-(** Esse projeto tem como objetivo apresentar uma implementacao funcional de árvores AVL,
-    além da análise de algumas de suas propriedades, juntamente com suas provas.
+(** Esse projeto tem como objetivo apresentar uma implementacao funcional de \u00e1rvores AVL,
+    al\u00e9m da an\u00e1lise de algumas de suas propriedades, juntamente com suas provas.
     Utilizaremos como base a implementacao de Binary Search Trees disponibilizada no
     Volume 3 - Verified Functional Algorithms. *)
 
@@ -44,22 +44,22 @@ Notation  "a >? b" := (I.ltb b a)
 Notation  "a <? b" := (I.ltb a b)
                           (at level 70) : Int_scope.
 
-Fixpoint height {V : Type} (t : tree V) : nat :=
+Fixpoint height {V : Type} (t : tree V) : int :=
   match t with
   | E => 0
-  | T l k v r => 1 + (Nat.max (height l) (height r))
+  | T l k v r => 1 + (max (height l) (height r))
   end.
 
 Definition abs n : nat := Nat.max n (0-n).
 
-Inductive AVL {V : Type} : tree V -> Prop :=
+(**Inductive AVL {V : Type} : tree V -> Prop :=
 | AVL_E : AVL E
 | AVL_T : forall l k v r,
     BST (T l k v r) ->
     abs(height l - height r) <= 1  ->
     AVL l ->
     AVL r ->
-    AVL (T l k v r).
+    AVL (T l k v r).*)
 
 Definition rootKey {V : Type} (t : tree V) : key :=
   match t with
@@ -99,17 +99,27 @@ Definition rotateRight {V : Type} (d : V) (t : tree V) : tree V :=
 
 Local Open Scope Int_scope.
 
+Definition calcBalance {V : Type} (t : tree V) : int :=
+  match t with
+  | E => 0
+  | T l x v r => I.sub (height r) (height l)
+  end.
+
 Definition balance {V : Type} (d : V) (t : tree V) : tree V :=
   match t with
   | E => t
-  | T l x v r => if 1 <? (I.sub (height r) (height l)) then rotateLeft d t
-                else if (height r - height l) <? -(1) then rotateRight d t
-                     else t
+  | T l x v r => if 1 <? calcBalance t then 
+                                       if calcBalance r <? 0 then rotateLeft d (T l x v (rotateRight d r)) 
+                                                             else rotateLeft d t
+                 else if calcBalance t <? -(1) then 
+                                               if 0 <? calcBalance l then rotateRight d ( T (rotateLeft d l) x v r) 
+                                                                     else rotateRight d t
+                 else t
   end.
 
 Close Scope Int_scope.
 
-(** * Agora, definiremos a funcao de insert, que utilizará a funcao de balance sempre
+(** * Agora, definiremos a funcao de insert, que utilizar\u00e1 a funcao de balance sempre
       que uma insercao for realizada. *)
 
 Fixpoint insert' {V : Type} (x : key) (v : V) (d : V) (t : tree V) : tree V :=
