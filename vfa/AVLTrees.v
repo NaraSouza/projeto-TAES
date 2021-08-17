@@ -61,41 +61,24 @@ Definition abs n : nat := Nat.max n (0-n).
     AVL r ->
     AVL (T l k v r).*)
 
-Definition rootKey {V : Type} (t : tree V) : key :=
-  match t with
-  | E => 0
-  | T l x v r => x
-  end.
-
-Definition rootValue {V : Type} (d : V) (t : tree V) : V :=
-  match t with
-  | E => d
-  | T l x v r => v
-  end.
-
-Definition leftTree {V : Type} (t : tree V) : tree V :=
+Definition rotateLeft {V : Type} (t : tree V) : tree V :=
   match t with
   | E => E
-  | T l x v r => l
+  | T l x v r => match r with 
+                 |E => E 
+                 | T l' x' v' r' => T (T E x v E) x' v' r'
+                 end
   end.
 
-Definition rightTree {V : Type} (t : tree V) : tree V :=
+Definition rotateRight {V : Type} (t : tree V) : tree V :=
   match t with
   | E => E
-  | T l x v r => r
+  | T l x v r => match l with 
+                 |E => E 
+                 | T l' x' v' r' => T l' x' v' (T E x v E)
+                 end
   end.
 
-Definition rotateLeft {V : Type} (d : V) (t : tree V) : tree V :=
-  match t with
-  | E => E
-  | T l x v r => T (T E x v E) (rootKey r) (rootValue d r) (rightTree r)
-  end.
-
-Definition rotateRight {V : Type} (d : V) (t : tree V) : tree V :=
-  match t with
-  | E => E
-  | T l x v r => T (leftTree l) (rootKey l) (rootValue d l) (T E x v E)
-  end.
 
 Local Open Scope Int_scope.
 
@@ -105,15 +88,15 @@ Definition calcBalance {V : Type} (t : tree V) : int :=
   | T l x v r => I.sub (height r) (height l)
   end.
 
-Definition balance {V : Type} (d : V) (t : tree V) : tree V :=
+Definition balance {V : Type} (t : tree V) : tree V :=
   match t with
   | E => t
   | T l x v r => if 1 <? calcBalance t then 
-                                       if calcBalance r <? 0 then rotateLeft d (T l x v (rotateRight d r)) 
-                                                             else rotateLeft d t
+                                       if calcBalance r <? 0 then rotateLeft (T l x v (rotateRight r)) 
+                                                             else rotateLeft t
                  else if calcBalance t <? -(1) then 
-                                               if 0 <? calcBalance l then rotateRight d ( T (rotateLeft d l) x v r) 
-                                                                     else rotateRight d t
+                                               if 0 <? calcBalance l then rotateRight ( T (rotateLeft l) x v r) 
+                                                                     else rotateRight t
                  else t
   end.
 
@@ -122,11 +105,11 @@ Close Scope Int_scope.
 (** * Agora, definiremos a funcao de insert, que utilizar\u00e1 a funcao de balance sempre
       que uma insercao for realizada. *)
 
-Fixpoint insert' {V : Type} (x : key) (v : V) (d : V) (t : tree V) : tree V :=
+Fixpoint insert' {V : Type} (x : key) (v : V) (t : tree V) : tree V :=
   match t with
   | E => T E x v E
-  | T l y v' r => if y >? x then balance d (T (insert' x v d l) y v' r)
-                 else if x >? y then balance d (T l y v' (insert' x v d r))
+  | T l y v' r => if y >? x then balance (T (insert' x v l) y v' r)
+                 else if x >? y then balance (T l y v' (insert' x v r))
                       else T l x v r
   end.
 
