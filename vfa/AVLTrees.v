@@ -32,14 +32,11 @@ From VFA Require Import Perm.
     definir a funcao de balanceamento de uma arvore AVL. Mas antes, para
     facilitar a implementacao da funcao de balanceamento, vamos definir uma
     funcao que calcula a altura de uma arvore. Tambem iremos definir as funcoes
-    rotateLeft e rotateRight, alem de outras funcoes auxiliares.*)
+    rotateLeft e rotateRight.*)
 
 Module AVL (Import I:Int).
 
 Local Notation int := I.t.
-
-Notation  "a >? b" := (I.ltb b a)
-                          (at level 70) : Int_scope.
 
 Notation  "a <? b" := (I.ltb a b)
                           (at level 70) : Int_scope.
@@ -49,17 +46,6 @@ Fixpoint height {V : Type} (t : tree V) : int :=
   | E => 0
   | T l k v r => 1 + (max (height l) (height r))
   end.
-
-Definition abs n : nat := Nat.max n (0-n).
-
-(**Inductive AVL {V : Type} : tree V -> Prop :=
-| AVL_E : AVL E
-| AVL_T : forall l k v r,
-    BST (T l k v r) ->
-    abs(height l - height r) <= 1  ->
-    AVL l ->
-    AVL r ->
-    AVL (T l k v r).*)
 
 Definition rotateLeft {V : Type} (t : tree V) : tree V :=
   match t with
@@ -79,9 +65,6 @@ Definition rotateRight {V : Type} (t : tree V) : tree V :=
                  end
   end.
 
-
-Local Open Scope Int_scope.
-
 Definition calcBalance {V : Type} (t : tree V) : int :=
   match t with
   | E => 0
@@ -100,7 +83,6 @@ Definition balance {V : Type} (t : tree V) : tree V :=
                  else t
   end.
 
-Close Scope Int_scope.
 
 (** * Agora, definiremos a funcao de insert, que utilizar\u00e1 a funcao de balance sempre
       que uma insercao for realizada. *)

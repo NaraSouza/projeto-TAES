@@ -203,10 +203,12 @@ Qed.
 
 (** Prove that the empty tree is a BST. *)
 
+
+(** Provar *)
 Theorem empty_tree_BST : forall (V : Type),
     BST (@empty_tree V).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  unfold empty_tree. constructor. Qed.
 
 (** [] *)
 
@@ -221,11 +223,16 @@ Lemma ForallT_insert : forall (V : Type) (P : key -> V -> Prop) (t : tree V),
     ForallT P t -> forall (k : key) (v : V),
       P k v -> ForallT P (insert k v t).
 Proof.
-  (* FILL IN HERE *) Admitted.
+  intros. induction t.
+  - simpl. split. apply H0. split. reflexivity. reflexivity.
+  - simpl in H. destruct H. destruct H1. bdestruct (k0 <? k).
+    + destruct H3.
+      * 
 
 (** Now prove the main theorem. Proceed by induction on the evidence
     that [t] is a BST. *)
 
+(** Provar *)
 Theorem insert_BST : forall (V : Type) (k : key) (v : V) (t : tree V),
     BST t -> BST (insert k v t).
 Proof.
