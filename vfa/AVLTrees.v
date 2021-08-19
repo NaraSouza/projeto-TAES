@@ -17,8 +17,6 @@
     Volume 3 - Verified Functional Algorithms. *)
 
 From VFA Require Import SearchTree.
-Require Import Coq.ZArith.Int.
-Require Import Coq.ZArith.BinInt.
 From VFA Require Import Perm.
 
 (* ################################################################# *)
@@ -33,17 +31,12 @@ From VFA Require Import Perm.
     necessarias para o balanceamento e calcular o fator de balanceamento de uma arvore,
     respectivamente.*)
 
-Module AVL (Import I:Int).
+Module AVL.
 
-Local Notation int := I.t.
-
-Notation  "a <? b" := (I.ltb a b)
-                          (at level 70) : Int_scope.
-
-Fixpoint height {V : Type} (t : tree V) : int :=
+Fixpoint height {V : Type} (t : tree V) : nat :=
   match t with
   | E => 0
-  | T l k v r => 1 + (max (height l) (height r))
+  | T l k v r => 1 + (Nat.max (height l) (height r))
   end.
 
 Definition rotateLeft {V : Type} (t : tree V) : tree V :=
@@ -64,20 +57,20 @@ Definition rotateRight {V : Type} (t : tree V) : tree V :=
                  end
   end.
 
-Definition calcBalance {V : Type} (t : tree V) : int :=
+Definition calcBalance {V : Type} (t : tree V) : nat :=
   match t with
   | E => 0
-  | T l x v r => I.sub (height r) (height l)
+  | T l x v r => 2 + (height r) - (height l)
   end.
 
 Definition balance {V : Type} (t : tree V) : tree V :=
   match t with
   | E => t
-  | T l x v r => if 1 <? calcBalance t then 
-                                       if calcBalance r <? 0 then rotateLeft (T l x v (rotateRight r)) 
+  | T l x v r => if 3 <? calcBalance t then 
+                                       if calcBalance r <? 2 then rotateLeft (T l x v (rotateRight r)) 
                                                              else rotateLeft t
-                 else if calcBalance t <? -(1) then 
-                                               if 0 <? calcBalance l then rotateRight ( T (rotateLeft l) x v r) 
+                 else if calcBalance t <? 1 then 
+                                               if 2 <? calcBalance l then rotateRight ( T (rotateLeft l) x v r) 
                                                                      else rotateRight t
                  else t
   end.
@@ -105,14 +98,10 @@ Fixpoint insert' {V : Type} (x : key) (v : V) (t : tree V) : tree V :=
       Definiremos a funcao AVL para que possamos checar quando uma arvore 
       satisfaz essa propriedade ou no. *)
 
-(** * Checa se o modulo de um numero e maior que 1. *)
-Definition le1 (i : int) : Prop :=
-  if 1 <? (max i (-i)) then False else True.
-
 Fixpoint AVL {V : Type} (t: tree V) : Prop :=
   match t with
   | E => True
-  | T l x v r => le1 (calcBalance t) /\ AVL l /\ AVL r
+  | T l x v r => 1 <= (calcBalance t) /\ (calcBalance t) <= 3 /\ AVL l /\ AVL r
   end.
 
 (** * Agora podemos utiliza-la para provar as propriedades abaixo: *)
@@ -125,28 +114,46 @@ Proof.
   unfold empty_tree. constructor. Qed.
 
 (** * Propriedade 2: uma insercao em uma arvore AVL produz uma arvore AVL. *)
-
 Theorem insert_AVL : forall (V : Type) (k : key) (v : V) (t : tree V),
     AVL t -> AVL (insert k v t).
 Proof.
-  intros. induction t0.
-  - simpl. split.
-    + unfold le1. destruct (1 <? max (0 - 0) (- (0 - 0))) eqn:H'. exact_no_check I. apply I.
-    + split. apply I. apply I.
-  - simpl in H. destruct H. destruct H0. 
-    simpl. destruct (k0 >? k) eqn:H'.
-    + simpl. split. unfold le1. 
-      destruct (1 <? max (height t0_2 - height (insert k v t0_1)) (- (height t0_2 - height (insert k v t0_1)))) eqn:H''.
-      * exact_no_check I.
-      * apply I.
-      * split. apply IHt0_1 in H0. apply H0. apply H1.
-    + destruct (k >? k0) eqn:H''.
-      * simpl. split. unfold le1. 
-        destruct (1 <? max (height (insert k v t0_2) - height t0_1) (- (height (insert k v t0_2) - height t0_1))) eqn:H'''.
-        exact_no_check I. apply I.
-        split. apply H0. apply IHt0_2 in H1. apply H1.
-      * simpl. split. apply H. split. apply H0. apply H1. Qed.
-      
+  intros. induction t.
+  - simpl;lia.
+  - simpl. destruct (T (insert k v t1) k0 v0 t2) eqn:H'.
+    + destruct (k0 >? k) eqn:H''.
+      * simpl. apply I.
+      * destruct (k >? k0) eqn:H'''. unfold AVL in H. 
+        
+
+(** * Funcoes auxiliares *)
+Definition leftTree {V : Type} (t : tree V) : tree V :=
+  match t with
+  | E => E
+  | T l x v r => l
+  end.
+
+Definition rightTree {V : Type} (t : tree V) : tree V :=
+  match t with
+  | E => E
+  | T l x v r => r
+  end.
+
+(** * Propriedade 3: todos os nos de uma AVL tambem sao AVL. *)
+Theorem nodes_AVL : forall (V : Type) (t : tree V), AVL t -> AVL (leftTree t) /\ AVL (rightTree t).
+Proof.
+  intros. split.
+  - simpl. induction t0.
+    + simpl. apply I.
+    + simpl. simpl in H. destruct H. destruct H0. apply H0.
+  - simpl. induction t0.
+    + simpl. apply I.
+    + simpl. simpl in H. destruct H. destruct H0. apply H1. Qed.
+  
+
+(** * Propriedade 4: a altura das duas subarvores de todo no de uma AVL nunca difere em mais de 1. *)
+Theorem subtree_height : forall (V : Type) (t : tree V), AVL t -> 1 <=?
+                         I.sub (height (rightTree t)) (height (leftTree t)) /\
+                         I.sub (height (leftTree t)) (height (rightTree t)) <=? 1.
 
 End AVL.
 
