@@ -203,8 +203,6 @@ Qed.
 
 (** Prove that the empty tree is a BST. *)
 
-
-(** Provar *)
 Theorem empty_tree_BST : forall (V : Type),
     BST (@empty_tree V).
 Proof.
@@ -223,21 +221,42 @@ Lemma ForallT_insert : forall (V : Type) (P : key -> V -> Prop) (t : tree V),
     ForallT P t -> forall (k : key) (v : V),
       P k v -> ForallT P (insert k v t).
 Proof.
-  intros. induction t.
-  - simpl. split. apply H0. split. reflexivity. reflexivity.
-  - simpl in H. destruct H. destruct H1. bdestruct (k0 <? k).
-    + destruct H3.
-      * 
+  intros. induction t; simpl.
+    - repeat (split; auto).
+    - simpl in H. inv H.
+    bdestruct (k0 <? k).
+    * bdestruct (k <? k0). destruct H. repeat (split; auto).
+        lia. lia. lia.
+        simpl. repeat (split; auto).
+        inv H2. auto.
+        assert (k < k0 \/ k = k0 \/ k0 < k) as cases by lia.
+        destruct cases.
+        lia. inv H2. auto.
+    * bdestruct (k <? k0). simpl. repeat constructor.
+        auto. destruct H2. auto. inv H2. auto.
+        simpl. constructor.
+        auto. auto. Qed.
 
 (** Now prove the main theorem. Proceed by induction on the evidence
     that [t] is a BST. *)
 
-(** Provar *)
 Theorem insert_BST : forall (V : Type) (k : key) (v : V) (t : tree V),
     BST t -> BST (insert k v t).
 Proof.
-  (* FILL IN HERE *) Admitted.
-
+  intros. induction t.
+  - repeat constructor.
+  - inv H. simpl. 
+    bdestruct (k0 >? k).
+    constructor; try apply ForallT_insert; repeat assumption.
+    apply IHt1. apply H6.
+    bdestruct (k >? k0).
+    constructor; try apply ForallT_insert; repeat assumption.
+    apply IHt2. apply H7.
+    constructor. inversion H. subst. apply H4.
+    subst. lia.
+    inversion H0. subst. apply H5.
+    subst. lia.
+    apply H6. apply H7. Qed.
 (** [] *)
 
 (** Since [empty_tree] and [insert] are the only operations that

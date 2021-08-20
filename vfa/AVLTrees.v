@@ -112,7 +112,7 @@ Definition le1 (i : int) : Prop :=
 Fixpoint AVL {V : Type} (t: tree V) : Prop :=
   match t with
   | E => True
-  | T l x v r => le1 (calc_balance t) /\ AVL l /\ AVL r
+  | T l x v r => BST t /\ le1 (calc_balance t) /\ AVL l /\ AVL r
   end.
 
 (** * Agora podemos utiliza-la para provar as propriedades abaixo: *)
@@ -126,26 +126,20 @@ Proof.
 
 (** * Propriedade 2: uma insercao em uma arvore AVL produz uma arvore AVL. *)
 
+(** * Obs.: ForallT_insert e insert_BST foram provados no capitulo de SearchTree *)
+
 Theorem insert_AVL : forall (V : Type) (k : key) (v : V) (t : tree V),
     AVL t -> AVL (insert k v t).
 Proof.
   intros. induction t0.
   - simpl. split.
-    + unfold le1. destruct (1 <? max (0 - 0) (- (0 - 0))) eqn:H'. exact_no_check I. apply I.
-    + split. apply I. apply I.
-  - simpl in H. destruct H. destruct H0. 
-    simpl. destruct (k0 >? k) eqn:H'.
-    + simpl. split. unfold le1. 
-      destruct (1 <? max (height t0_2 - height (insert k v t0_1)) (- (height t0_2 - height (insert k v t0_1)))) eqn:H''.
-      * exact_no_check I.
-      * apply I.
-      * split. apply IHt0_1 in H0. apply H0. apply H1.
-    + destruct (k >? k0) eqn:H''.
-      * simpl. split. unfold le1. 
-        destruct (1 <? max (height (insert k v t0_2) - height t0_1) (- (height (insert k v t0_2) - height t0_1))) eqn:H'''.
-        exact_no_check I. apply I.
-        split. apply H0. apply IHt0_2 in H1. apply H1.
-      * simpl. split. apply H. split. apply H0. apply H1. Admitted.
+    + auto.
+    + split. unfold le1. destruct (1 <? max (0 - 0) (- (0 - 0))) eqn:H'. 
+      exact_no_check I. apply I. split. apply I. apply I.
+  - simpl in H. destruct H. destruct H0. destruct H1. simpl. destruct (k0 >? k) eqn:H'.
+    + simpl. split. destruct insert.
+      * constructor. apply IHt0_1. apply H1. admit.
+        constructor. unfold AVL in H2. Admitted.
 
 (** * Funcoes auxiliares *)
 
@@ -168,7 +162,7 @@ Proof.
   intros. split.
   - simpl. induction t0.
     + simpl. apply I.
-    + simpl. simpl in H. destruct H. destruct H0. apply H0.
+    + simpl. simpl in H. destruct H. destruct H0. destruct H1. apply H1.
   - simpl. induction t0.
     + simpl. apply I.
     + simpl. simpl in H. destruct H. destruct H0. apply H1. Qed.
@@ -191,7 +185,7 @@ Theorem subtree_height : forall (V : Type) (t : tree V), AVL t -> abs_diff_heigh
 Proof.
   intros. induction t0.
   - simpl. lia.
-  - destruct H. destruct H0. apply IHt0_1 in H0. apply IHt0_2 in H1. unfold calc_balance in H. Admitted.
+  - destruct H. destruct H0. destruct H1. apply IHt0_1 in H1. apply IHt0_2 in H2. Admitted.
 
 End AVL.
 
